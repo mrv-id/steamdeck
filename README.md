@@ -2,7 +2,9 @@
 
 > The **[Steam Deck](https://www.steamdeck.com/en/)** (released on February 25, 2022) is a handheld gaming computer developed by **Valve**. It is powerd by AMD's RDNA 2 architecture, running **SteamOS** (a GNU/Linux Arch based disibutrion) designed to play both native and Windows emulated titles via the **Proton** compatibility layer.
 
-## Compute
+## Tech Specs
+
+### Compute
 + APU:
 	+ CPU: Zen 2 (4 Cores / 8 Threads, 2.4-3.5GHz)
 	+ GPU: RDNA 2 (8 Compute Units, 1.0-1.6GHz)
@@ -12,7 +14,7 @@
 	+ 265GB NVMe (PCIe Gen 3 x2)
 	+ 512GB NVMe (PCIe Gen 3 x4)
 	
-## Display
+### Display
 + Type: IPS (Optically Bonded)
 + Size: 7" (Diagonal)
 + Resolution: 1280 x 800px
@@ -22,24 +24,28 @@
 + Touch: Yes
 + Sensor: Ambient Light
 
-## Connectivity
+### Connectivity
 + Bluetooth: 5.0
 + Wi-Fi: Dual-band, 2 x 2 MIMO, 2.4GHz & 5GHz, 802.11a/b/g/n/ac
 
-## Audio
+### Audio
 + Channels: Stereo w/ Embedded DSP
 + Microphones: Dual Array
 + Jack: 3.5mm, Combo
 
-## Power
+### Power
 + Input: 45W, USB Type-C, PD 3.0
 + Battery: 40Whr
 
-## Expansion
+### Expansion
 + microSD: UHS-I
 + External: USB 3.2 Gen 2, Type-C w/ DisplayPort (8K @60Hz or 4K @ 120Hz)
 
-## Controller
+### Size
++ Dimensions: 298mm x 117mm x 49mm
++ Weight: 669grams
+
+### Controller
 + Directional Pad: Up, Right, Down, Left
 + Face Buttons: A, B, X, Y
 + View Button
@@ -55,9 +61,7 @@
 + Haptics: Yes
 + Gyro: 6-Axis IMU
 
-## Size
-+ Dimensions: 298mm x 117mm x 49mm
-+ Weight: 669grams
+![tech specs 1](https://github.com/mrv-id/steamdeck/blob/main/tech-specs-1.png)
 
 ## CheatSheet
 **Steam** (button), **Power**, and **Switch to Desktop**.
