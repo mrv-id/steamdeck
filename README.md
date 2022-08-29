@@ -14,6 +14,9 @@
 | SSD (Essential)    | 64GB eMMC (PCIe Gen 2 x1)               |
 | SSD (Plus)         | 265GB NVMe (PCIe Gen 3 x2)              |
 | SSD (Premium)      | 512GB NVMe (PCIe Gen 3 x4)              |
+
+| Hardware           | Information                             |
+|:------------------:|:---------------------------------------:|
 | Display            | LCD                                     |
 | Display Type       | IPS (Optical Bonding)                   |
 | Size               | 7"                                      |
@@ -23,17 +26,32 @@
 | Brightness         | 400nits                                 |
 | Touch Sensitive    | Yes (10-Point)                          |
 | Sensor             | Ambient Light                           |
+
+| Hardware           | Information                             |
+|:------------------:|:---------------------------------------:|
 | Speakers           | Stereo (? Watt)                         |
 | DSP                | Embedded                                |
 | Microphone         | Dual Array                              |
 | Audio Jack         | 3.5mm Combo                             |
+
+| Hardware           | Information                             |
+|:------------------:|:---------------------------------------:|
 | Bluetooth          | 5.0                                     |
 | Wi-Fi              | 5 (802.11a/b/g/n/ac)                    |
 | Dual-Band          | 2 x 2 MIMO (2.4GHz & 5GHz)              |
+
+| Hardware           | Information                             |
+|:------------------:|:---------------------------------------:|
 | Input              | USB 3.2 Gen 2, Type-C (45W, P.D. 3.0)   |
 | Battery            | 40Whr                                   |
+
+| Hardware           | Information                             |
+|:------------------:|:---------------------------------------:|
 | Expandable Storage | microSD                                 |
 | microSD Type       | UHS-I (A2)                              |
+
+| Hardware           | Information                             |
+|:------------------:|:---------------------------------------:|
 | Dimensions         | 298mm x 117mm x 49mm                    |
 | Weight             | 669grams                                |
 
