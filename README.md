@@ -2,7 +2,11 @@
 
 > The **[Steam Deck](https://www.steamdeck.com/en/)** (released on February 25, 2022) is a handheld gaming computer developed by **Valve**. It is powerd by AMD's RDNA 2 architecture, running **SteamOS** (a GNU/Linux Arch based disibutrion) designed to play both native and Windows emulated titles via the **Proton** compatibility layer.
 
-## Tech Specs
+## Technical Specifications
+
+![tech specs 1](https://github.com/mrv-id/steamdeck/blob/main/tech-specs-1.png)
+![tech specs 2](https://github.com/mrv-id/steamdeck/blob/main/tech-specs-2.png)
+![tech specs 3](https://github.com/mrv-id/steamdeck/blob/main/tech-specs-3.png)
 
 ### Compute
 + APU:
@@ -60,10 +64,6 @@
 + Left & Right Lower Buttons: L5, R5
 + Haptics: Yes
 + Gyro: 6-Axis IMU
-
-![tech specs 1](https://github.com/mrv-id/steamdeck/blob/main/tech-specs-1.png)
-![tech specs 2](https://github.com/mrv-id/steamdeck/blob/main/tech-specs-2.png)
-![tech specs 3](https://github.com/mrv-id/steamdeck/blob/main/tech-specs-3.png)
 
 ## CheatSheet
 **Steam** (button), **Power**, and **Switch to Desktop**.
