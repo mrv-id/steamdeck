@@ -6,19 +6,31 @@
 
 ## Technical Specifications
 
-![tech specs 1](https://github.com/mrv-id/steamdeck/blob/main/tech-specs-1.png)
-![tech specs 2](https://github.com/mrv-id/steamdeck/blob/main/tech-specs-2.png)
-![tech specs 3](https://github.com/mrv-id/steamdeck/blob/main/tech-specs-3.png)
+| COMPUTE       | INFO                                    |
+|:-------------:|:---------------------------------------:|
+| CPU           | ZEN 2 (4 Cores / 8 Threads, 2.4-3.5GHz) |
+| GPU           | RDNA 2 (8 Compute Units, 1.0-1.6GHz)    |
+| RAM           | 16GB LPDDR5                             |
+| SSD Essential | 64GB eMMC (PCIe Gen 2 x1)               |
+| SSD Plus      | 265GB NVMe (PCIe Gen 3 x2)              |
+| SSD Premium   | 512GB NVMe (PCIe Gen 3 x4)              |
 
-### Compute
-| APU | INFO                                    |
-|:---:|:---------------------------------------:|
-| CPU | ZEN 2 (4 Cores / 8 Threads, 2.4-3.5GHz) |
-| GPU | RDNA 2 (8 Compute Units, 1.0-1.6GHz)    |
-| RAM | 16GB LPDDR5                             |
-| SSD | 64GB eMMC (PCIe Gen 2 x1)               |
-|     | 265GB NVMe (PCIe Gen 3 x2)              |
-|     |	512GB NVMe (PCIe Gen 3 x4)              |
+| DISPLAY      | INFO                       |
+|:------------:|:--------------------------:|
+| Type         | IPS LCD (Optically Bonded) |
+| Size         | 7"                         |
+| Resolution   | 1280 x 800px               |
+| Aspect Ratio | 16:10                      |
+| Refresh Rate | 60Hz                       |
+| Brightness   | 400nits                    |
+| Touch        | Yes                        |
+| Sensor       | Ambient Light              |
+
+| AUDIO    | INFO                    |
+|:--------:|:-----------------------:|
+| Channels | Stereo w/ Embedded DSP  |
+| Input    | Dual Array Microsphones |
+| Output   | 3.5mm Combo Jack        |
 
 ### Controls
 + Directional Pad: Up, Right, Down, Left
@@ -35,25 +47,10 @@
 + Left & Right Lower Buttons: L5, R5
 + Haptics: Yes
 + Gyro: 6-Axis IMU
-	
-### Display
-+ Type: IPS (Optically Bonded)
-+ Size: 7" (Diagonal)
-+ Resolution: 1280 x 800px
-+ Aspect Ratio: 16:10
-+ Refresh Rate: 60Hz
-+ Brightness: 400nits
-+ Touch: Yes
-+ Sensor: Ambient Light
 
 ### Connectivity
 + Bluetooth: 5.0
 + Wi-Fi: Dual-band, 2 x 2 MIMO, 2.4GHz & 5GHz, 802.11a/b/g/n/ac
-
-### Audio
-+ Channels: Stereo w/ Embedded DSP
-+ Microphones: Dual Array
-+ Jack: 3.5mm, Combo
 
 ### Power
 + Input: 45W, USB Type-C, PD 3.0
@@ -70,6 +67,10 @@
 ### Software
 + Operating System: SteamOS (ver. 3.0)
 + Desktop: KDE Plasma
+
+![tech specs 1](https://github.com/mrv-id/steamdeck/blob/main/tech-specs-1.png)
+![tech specs 2](https://github.com/mrv-id/steamdeck/blob/main/tech-specs-2.png)
+![tech specs 3](https://github.com/mrv-id/steamdeck/blob/main/tech-specs-3.png)
 
 ## CheatSheet
 **Steam Button**, **Power**, and **Switch to Desktop**.
