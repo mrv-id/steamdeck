@@ -72,4 +72,16 @@
 + Desktop: KDE Plasma
 
 ## CheatSheet
-**Steam** (button), **Power**, and **Switch to Desktop**.
+**Steam Button**, **Power**, and **Switch to Desktop**.
+| CMD                                                                   | INFO             |
+|:---------------------------------------------------------------------:|:----------------:|
+| Save (as to install) new software                                     | pacman -S        |
+| Synchronize system repositories                                       | pacman -Sy       |
+| Update system software                                                | pacman -Su       |
+| Synchronize system repositories and update system software            | pacman -Syu      |
+| Remove installed software                                             | pacman -R        |
+| Remove installed software w/ it’s dependencies                        | pacman -Rs       |
+| Clear system cache                                                    | pacman -Sc       |
+| Completely clear system cache                                         | pacman -Scc      |
+| Remove installed software w/ it’s dependencies and clear system cache | pacman -Rsc      |
+| Change mode and execute a file script                                 | chmod +x file.sh |
