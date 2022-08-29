@@ -6,27 +6,36 @@
 
 ## Technical Specifications
 
-| Hardware        | Information                             |
-|:---------------:|:---------------------------------------:|
-| CPU             | ZEN 2 (4 Cores / 8 Threads, 2.4-3.5GHz) |
-| GPU             | RDNA 2 (8 Compute Units, 1.0-1.6GHz)    |
-| RAM             | 16GB LPDDR5                             |
-| SSD (Essential) | 64GB eMMC (PCIe Gen 2 x1)               |
-| SSD (Plus)      | 265GB NVMe (PCIe Gen 3 x2)              |
-| SSD (Premium)   | 512GB NVMe (PCIe Gen 3 x4)              |
-| Display         | IPS LCD                                 |
-| Type            | Optical Bonding                         |
-| Size            | 7"                                      |
-| Aspect Ratio    | 16:10                                   |
-| Resolution      | 1280 x 800px                            |
-| Refresh Rate    | 60Hz                                    |
-| Brightness      | 400nits                                 |
-| Touch Sensitive | Yes                                     |
-| Sensor          | Ambient Light                           |
-| Speakers        | Stereo                                  |
-| DSP             | Embedded                                |
-| Microphones     | Dual Array                              |
-| Audio Jack      | 3.5mm Combo                             |
+| Hardware           | Information                             |
+|:------------------:|:---------------------------------------:|
+| CPU                | ZEN 2 (4 Cores / 8 Threads, 2.4-3.5GHz) |
+| GPU                | RDNA 2 (8 Compute Units, 1.0-1.6GHz)    |
+| RAM                | 16GB LPDDR5                             |
+| SSD (Essential)    | 64GB eMMC (PCIe Gen 2 x1)               |
+| SSD (Plus)         | 265GB NVMe (PCIe Gen 3 x2)              |
+| SSD (Premium)      | 512GB NVMe (PCIe Gen 3 x4)              |
+| Display            | LCD                                     |
+| Display Type       | IPS (Optical Bonding)                   |
+| Size               | 7"                                      |
+| Aspect Ratio       | 16:10                                   |
+| Resolution         | 1280 x 800px                            |
+| Refresh Rate       | 60Hz                                    |
+| Brightness         | 400nits                                 |
+| Touch Sensitive    | Yes (10-Point)                          |
+| Sensor             | Ambient Light                           |
+| Speakers           | Stereo (? Watt)                         |
+| DSP                | Embedded                                |
+| Microphone         | Dual Array                              |
+| Audio Jack         | 3.5mm Combo                             |
+| Bluetooth          | 5.0                                     |
+| Wi-Fi              | 5 (802.11a/b/g/n/ac)                    |
+| Dual-Band          | 2 x 2 MIMO (2.4GHz & 5GHz)              |
+| Input              | USB 3.2 Gen 2, Type-C (45W, P.D. 3.0)   |
+| Battery            | 40Whr                                   |
+| Expandable Storage | microSD                                 |
+| microSD Type       | UHS-I (A2)                              |
+| Dimensions         | 298mm x 117mm x 49mm                    |
+| Weight             | 669grams                                |
 
 ### Controls
 + Directional Pad: Up, Right, Down, Left
@@ -43,26 +52,6 @@
 + Left & Right Lower Buttons: L5, R5
 + Haptics: Yes
 + Gyro: 6-Axis IMU
-
-### Connectivity
-+ Bluetooth: 5.0
-+ Wi-Fi: Dual-band, 2 x 2 MIMO, 2.4GHz & 5GHz, 802.11a/b/g/n/ac
-
-### Power
-+ Input: 45W, USB Type-C, PD 3.0
-+ Battery: 40Whr
-
-### Expansion
-+ microSD: UHS-I
-+ External: USB 3.2 Gen 2, Type-C w/ DisplayPort (8K @60Hz or 4K @ 120Hz)
-
-### Size
-+ Dimensions: 298mm x 117mm x 49mm
-+ Weight: 669grams
-
-### Software
-+ Operating System: SteamOS (ver. 3.0)
-+ Desktop: KDE Plasma
 
 ![tech specs 1](https://github.com/mrv-id/steamdeck/blob/main/tech-specs-1.png)
 ![tech specs 2](https://github.com/mrv-id/steamdeck/blob/main/tech-specs-2.png)
