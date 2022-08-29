@@ -19,6 +19,22 @@
 	+ 64GB eMMC (PCIe Gen 2 x1)
 	+ 265GB NVMe (PCIe Gen 3 x2)
 	+ 512GB NVMe (PCIe Gen 3 x4)
+
+### Controls
++ Directional Pad: Up, Right, Down, Left
++ Face Buttons: A, B, X, Y
++ View Button
++ Menu Button
++ Left & Right Analog Sticks (w/ Capacitive Touch): L3, R3
++ Left & Right Trackpads
++ Steam Button
++ Access Button
++ Left & Right Analog Triggers: L1, R1
++ Left & Right Bumpers: L2, R2
++ Left & Right Upper Buttons: L4, R4
++ Left & Right Lower Buttons: L5, R5
++ Haptics: Yes
++ Gyro: 6-Axis IMU
 	
 ### Display
 + Type: IPS (Optically Bonded)
@@ -51,21 +67,9 @@
 + Dimensions: 298mm x 117mm x 49mm
 + Weight: 669grams
 
-### Controller
-+ Directional Pad: Up, Right, Down, Left
-+ Face Buttons: A, B, X, Y
-+ View Button
-+ Menu Button
-+ Left & Right Analog Sticks (w/ Capacitive Touch): L3, R3
-+ Left & Right Trackpads
-+ Steam Button
-+ Access Button
-+ Left & Right Analog Triggers: L1, R1
-+ Left & Right Bumpers: L2, R2
-+ Left & Right Upper Buttons: L4, R4
-+ Left & Right Lower Buttons: L5, R5
-+ Haptics: Yes
-+ Gyro: 6-Axis IMU
+### Software
++ Operating System: SteamOS (ver. 3.0)
++ Desktop: KDE Plasma
 
 ## CheatSheet
 **Steam** (button), **Power**, and **Switch to Desktop**.
