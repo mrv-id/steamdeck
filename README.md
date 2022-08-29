@@ -62,6 +62,8 @@
 + Gyro: 6-Axis IMU
 
 ![tech specs 1](https://github.com/mrv-id/steamdeck/blob/main/tech-specs-1.png)
+![tech specs 2](https://github.com/mrv-id/steamdeck/blob/main/tech-specs-2.png)
+![tech specs 3](https://github.com/mrv-id/steamdeck/blob/main/tech-specs-3.png)
 
 ## CheatSheet
 **Steam** (button), **Power**, and **Switch to Desktop**.
