@@ -11,11 +11,14 @@
 ![tech specs 3](https://github.com/mrv-id/steamdeck/blob/main/tech-specs-3.png)
 
 ### Compute
+| APU | INFO                                    |
 |:---:|:---------------------------------------:|
-| CPU | Zen 2 (4 Cores / 8 Threads, 2.4-3.5GHz) |
+| CPU | ZEN 2 (4 Cores / 8 Threads, 2.4-3.5GHz) |
 | GPU | RDNA 2 (8 Compute Units, 1.0-1.6GHz)    |
 | RAM | 16GB LPDDR5                             |
-| SSD | 64GB eMMC (PCIe Gen 2 x1), 265GB NVMe (PCIe Gen 3 x2), 512GB NVMe (PCIe Gen 3 x4) |
+| SSD | 64GB eMMC (PCIe Gen 2 x1)
+        265GB NVMe (PCIe Gen 3 x2)
+	512GB NVMe (PCIe Gen 3 x4) |
 
 ### Controls
 + Directional Pad: Up, Right, Down, Left
