@@ -39,40 +39,41 @@
 | Wi-Fi              | 5 (802.11a/b/g/n/ac)                    |
 | Dual-Band          | 2 x 2 MIMO (2.4GHz & 5GHz)              |
 
-| Battery            | Information                             |
-|:------------------:|:---------------------------------------:|
-| Input              | USB 3.2 Gen 2, Type-C (45W, P.D. 3.0)   |
-| Battery            | 40Whr                                   |
-
 | Expandable Storage | Information                             |
 |:------------------:|:---------------------------------------:|
 | Type               | microSD                                 |
 | Protocol           | UHS-I (A2)                              |
 
-| Hardware           | Information                             |
+| Battery            | Information                             |
 |:------------------:|:---------------------------------------:|
-| Dimensions         | 298mm x 117mm x 49mm                    |
-| Weight             | 669grams                                |
+| Input              | USB 3.2 Gen 2, Type-C (45W, P.D. 3.0)   |
+| Battery            | 40Whr                                   |
 
-### Controls
-+ Directional Pad: Up, Right, Down, Left
-+ Face Buttons: A, B, X, Y
-+ View Button
-+ Menu Button
-+ Left & Right Analog Sticks (w/ Capacitive Touch): L3, R3
-+ Left & Right Trackpads
-+ Steam Button
-+ Access Button
-+ Left & Right Analog Triggers: L1, R1
-+ Left & Right Bumpers: L2, R2
-+ Left & Right Upper Buttons: L4, R4
-+ Left & Right Lower Buttons: L5, R5
-+ Haptics: Yes
-+ Gyro: 6-Axis IMU
+| Dimensions         | Information                             |
+|:------------------:|:---------------------------------------:|
+| Size               | 298mm x 117mm x 49mm                    |
+| Weight             | 669grams                                |
 
 ![tech specs 1](https://github.com/mrv-id/steamdeck/blob/main/tech-specs-1.png)
 ![tech specs 2](https://github.com/mrv-id/steamdeck/blob/main/tech-specs-2.png)
 ![tech specs 3](https://github.com/mrv-id/steamdeck/blob/main/tech-specs-3.png)
+
+| Controls                     | Information                  |
+|:----------------------------:|:----------------------------:|
+| Directional Pad              | Up, Right, Down, Left        |
+| Face Buttons                 | A, B, X, Y                   |
+| View Button                  |                              |
+| Menu Button                  |                              |
+| Left & Right Analog Sticks   | L3, R3 (w/ Capacitive Touch) |
+| Left & Right Trackpads       |                              |
+| Steam Button                 |                              |
+| Access Button                |                              |
+| Left & Right Analog Triggers | L1, R1                       |
+| Left & Right Bumpers         | L2, R2                       |
+| Left & Right Upper Buttons   | L4, R4                       |
+| Left & Right Lower Buttons   | L5, R5                       |
+| Haptics                      | Yes                          |
+| Gyro                         | 6-Axis IMU                   |
 
 ## CheatSheet
 **Steam Button**, **Power**, and **Switch to Desktop**.
