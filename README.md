@@ -6,7 +6,7 @@
 
 ## Technical Specifications
 
-| Compute           | Information                             |
+| Compute           | Information                              |
 |:------------------:|:---------------------------------------:|
 | CPU                | Zen 2 (4 Cores / 8 Threads, 2.4-3.5GHz) |
 | GPU                | RDNA 2 (8 Compute Units, 1.0-1.6GHz)    |
@@ -76,8 +76,10 @@
 | Gyro                         | 6-Axis IMU                   |
 
 ## CheatSheet
-**Steam Button**, **Power**, and **Switch to Desktop**.
-| Command                                                               | Information      |
+
+> **Steam Button**, **Power**, and **Switch to Desktop**.
+
+| Information                                                           | Command          |
 |:---------------------------------------------------------------------:|:----------------:|
 | Save (as to install) new software                                     | pacman -S        |
 | Synchronize system repositories                                       | pacman -Sy       |
@@ -90,3 +92,33 @@
 | Remove installed software w/ it’s dependencies and clear system cache | pacman -Rsc      |
 | Change mode of a script                                               | chmod +x file.sh |
 | Execute script                                                        | ./file.sh        |
+
+## Tools & Apps
+Install basic software.
+
+| Command                   | Information |
+|:-------------------------:|:-----------:|
+| pacman -S bash-completion | |
+| pacman -S firefox         | |
+| pacman -S qbittorrent     | |
+| pacman -S kodi            | |
+
+## Neofetch
+Install and enable neofetch on terminal.
+
+| Command            | Information   |
+|:------------------:|:-------------:|
+| pacman -S neofetch | |
+| nano ~/.bashrc     | ADD: neofetch |
+| source ~/.bashrc   | |
+
+## AUR
+Install and enable Arch User Repository.
+
+| Command                                     | Information   |
+|:-------------------------------------------:|:-------------:|
+| pacman -S git                               | |
+| pacman -S base-devel                        |
+| git clone https://aur.archlinux.org/yay.git |
+| cd yay                                      |
+| makepkg -si                                 |
