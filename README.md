@@ -17,19 +17,18 @@
 
 | Display            | Information                             |
 |:------------------:|:---------------------------------------:|
-| Display            | LCD                                     |
-| Display Type       | IPS (Optical Bonding)                   |
+| Type               | LCD IPS (Optical Bonding)               |
 | Size               | 7"                                      |
 | Aspect Ratio       | 16:10                                   |
 | Resolution         | 1280 x 800px                            |
 | Refresh Rate       | 60Hz                                    |
 | Brightness         | 400nits                                 |
-| Touch Sensitive    | Yes (10-Point)                          |
+| Touch Sensitive    | Yes                                     |
 | Sensor             | Ambient Light                           |
 
 | Audio              | Information                             |
 |:------------------:|:---------------------------------------:|
-| Speakers           | Stereo (? Watt)                         |
+| Speakers           | Stere                                   |
 | DSP                | Embedded                                |
 | Microphone         | Dual Array                              |
 | Audio Jack         | 3.5mm Combo                             |
