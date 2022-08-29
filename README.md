@@ -1,5 +1,7 @@
 # Hitchhiker's Guide to the Steam Deck
 
+![logo](https://github.com/mrv-id/steamdeck/blob/main/logo.png)
+
 > The **[Steam Deck](https://www.steamdeck.com/en/)** (released on February 25, 2022) is a handheld gaming computer developed by **Valve**. It is powerd by AMD's RDNA 2 architecture, running **SteamOS** (a GNU/Linux Arch based disibutrion) designed to play both native and Windows emulated titles via the **Proton** compatibility layer.
 
 ## Technical Specifications
