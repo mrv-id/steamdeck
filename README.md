@@ -6,31 +6,27 @@
 
 ## Technical Specifications
 
-| COMPUTE       | INFO                                    |
-|:-------------:|:---------------------------------------:|
-| CPU           | ZEN 2 (4 Cores / 8 Threads, 2.4-3.5GHz) |
-| GPU           | RDNA 2 (8 Compute Units, 1.0-1.6GHz)    |
-| RAM           | 16GB LPDDR5                             |
-| SSD Essential | 64GB eMMC (PCIe Gen 2 x1)               |
-| SSD Plus      | 265GB NVMe (PCIe Gen 3 x2)              |
-| SSD Premium   | 512GB NVMe (PCIe Gen 3 x4)              |
-
-| DISPLAY      | INFO                       |
-|:------------:|:--------------------------:|
-| Type         | IPS LCD (Optically Bonded) |
-| Size         | 7"                         |
-| Resolution   | 1280 x 800px               |
-| Aspect Ratio | 16:10                      |
-| Refresh Rate | 60Hz                       |
-| Brightness   | 400nits                    |
-| Touch        | Yes                        |
-| Sensor       | Ambient Light              |
-
-| AUDIO    | INFO                    |
-|:--------:|:-----------------------:|
-| Channels | Stereo w/ Embedded DSP  |
-| Input    | Dual Array Microsphones |
-| Output   | 3.5mm Combo Jack        |
+| Hardware        | Information                             |
+|:---------------:|:---------------------------------------:|
+| CPU             | ZEN 2 (4 Cores / 8 Threads, 2.4-3.5GHz) |
+| GPU             | RDNA 2 (8 Compute Units, 1.0-1.6GHz)    |
+| RAM             | 16GB LPDDR5                             |
+| SSD (Essential) | 64GB eMMC (PCIe Gen 2 x1)               |
+| SSD (Plus)      | 265GB NVMe (PCIe Gen 3 x2)              |
+| SSD (Premium)   | 512GB NVMe (PCIe Gen 3 x4)              |
+| Display         | IPS LCD                                 |
+| Type            | Optical Bonding                         |
+| Size            | 7"                                      |
+| Aspect Ratio    | 16:10                                   |
+| Resolution      | 1280 x 800px                            |
+| Refresh Rate    | 60Hz                                    |
+| Brightness      | 400nits                                 |
+| Touch Sensitive | Yes                                     |
+| Sensor          | Ambient Light                           |
+| Speakers        | Stereo                                  |
+| DSP             | Embedded                                |
+| Microphones     | Dual Array                              |
+| Audio Jack      | 3.5mm Combo                             |
 
 ### Controls
 + Directional Pad: Up, Right, Down, Left
