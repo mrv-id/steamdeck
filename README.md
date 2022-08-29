@@ -6,16 +6,16 @@
 
 ## Technical Specifications
 
-| Hardware           | Information                             |
+| Compute           | Information                             |
 |:------------------:|:---------------------------------------:|
-| CPU                | ZEN 2 (4 Cores / 8 Threads, 2.4-3.5GHz) |
+| CPU                | Zen 2 (4 Cores / 8 Threads, 2.4-3.5GHz) |
 | GPU                | RDNA 2 (8 Compute Units, 1.0-1.6GHz)    |
 | RAM                | 16GB LPDDR5                             |
 | SSD (Essential)    | 64GB eMMC (PCIe Gen 2 x1)               |
 | SSD (Plus)         | 265GB NVMe (PCIe Gen 3 x2)              |
 | SSD (Premium)      | 512GB NVMe (PCIe Gen 3 x4)              |
 
-| Hardware           | Information                             |
+| Display            | Information                             |
 |:------------------:|:---------------------------------------:|
 | Display            | LCD                                     |
 | Display Type       | IPS (Optical Bonding)                   |
@@ -27,28 +27,28 @@
 | Touch Sensitive    | Yes (10-Point)                          |
 | Sensor             | Ambient Light                           |
 
-| Hardware           | Information                             |
+| Audio              | Information                             |
 |:------------------:|:---------------------------------------:|
 | Speakers           | Stereo (? Watt)                         |
 | DSP                | Embedded                                |
 | Microphone         | Dual Array                              |
 | Audio Jack         | 3.5mm Combo                             |
 
-| Hardware           | Information                             |
+| Connectivity       | Information                             |
 |:------------------:|:---------------------------------------:|
 | Bluetooth          | 5.0                                     |
 | Wi-Fi              | 5 (802.11a/b/g/n/ac)                    |
 | Dual-Band          | 2 x 2 MIMO (2.4GHz & 5GHz)              |
 
-| Hardware           | Information                             |
+| Battery            | Information                             |
 |:------------------:|:---------------------------------------:|
 | Input              | USB 3.2 Gen 2, Type-C (45W, P.D. 3.0)   |
 | Battery            | 40Whr                                   |
 
-| Hardware           | Information                             |
+| Expandable Storage | Information                             |
 |:------------------:|:---------------------------------------:|
-| Expandable Storage | microSD                                 |
-| microSD Type       | UHS-I (A2)                              |
+| Type               | microSD                                 |
+| Protocol           | UHS-I (A2)                              |
 
 | Hardware           | Information                             |
 |:------------------:|:---------------------------------------:|
@@ -77,7 +77,7 @@
 
 ## CheatSheet
 **Steam Button**, **Power**, and **Switch to Desktop**.
-| CMD                                                                   | INFO             |
+| Command                                                               | Information      |
 |:---------------------------------------------------------------------:|:----------------:|
 | Save (as to install) new software                                     | pacman -S        |
 | Synchronize system repositories                                       | pacman -Sy       |
