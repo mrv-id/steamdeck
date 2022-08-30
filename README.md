@@ -14,8 +14,6 @@
 | SSD (Essential)    | 64GB eMMC (PCIe Gen 2 x1)               |
 | SSD (Plus)         | 265GB NVMe (PCIe Gen 3 x2)              |
 | SSD (Premium)      | 512GB NVMe (PCIe Gen 3 x4)              |
-
-| Display            | Information                             |
 |:------------------:|:---------------------------------------:|
 | Type               | LCD IPS (Optical Bonding)               |
 | Size               | 7"                                      |
