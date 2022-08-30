@@ -2,7 +2,7 @@
 
 ![logo](https://github.com/mrv-id/steamdeck/blob/main/logo.png)
 
-> The **[Steam Deck](https://www.steamdeck.com/en/)** (released on February 25, 2022) is a handheld gaming computer developed by **Valve**. It is powerd by AMD's RDNA 2 architecture, running **SteamOS** (a GNU/Linux Arch based disibutrion) designed to play both native and Windows emulated titles via the **Proton** compatibility layer.
+> The **[Steam Deck](https://www.steamdeck.com/en/)** (released on February 25, 2022) is a handheld gaming computer developed by **Valve**. It is powerd by AMD's RDNA 2 architecture, running **SteamOS** (a GNU/Linux Arch based disibutrion) designed to play both native and Windows emulated titles via the **Proton** compatibility layer, with the use of **FSR**.
 
 ## Technical Specifications
 
@@ -75,7 +75,10 @@
 ![tech specs 2](https://github.com/mrv-id/steamdeck/blob/main/tech-specs-2.png)
 ![tech specs 3](https://github.com/mrv-id/steamdeck/blob/main/tech-specs-3.png)
 
-> **Steam Button**, **Power**, and **Switch to Desktop**.
+## Developer Mode
++ System Settings: Enable Developer Mode
++ Developer: CEF Remote Debugging
++ Steam (Button) > Power > Switch to Desktop
 
 ## CheatSheet
 | Information                                                           | Command               |
@@ -134,7 +137,19 @@
 | sudo yay -S obs-studio              | |
 | sudo yay -S google-chrome-beta      | |
 | sudo yay -S microsoft-edge-beta-bin | |
-| **DSCVR**: Flatseal                 | |
+
+## WebSite Shortcuts
++ **DSCVR**: Flatseal
+Fileystem: /run/udev:ro
+LAUNCH OPTIONS: --window-size=1024,640 --force-device-scale-factor=1.25 --device-scale-factor=1.25 --kiosk "https://www.google.com"
+
+## Decky Loader
++ curl -L https://github.com/SteamDeckHomebrew/decky-loader/raw/main/dist/install_prerelease.sh | sh
+
+## Replay Sorcery
+| Command                    | Information |
+|:--------------------------:|:-----------:|
+| sudo yay -S replay-sorcery | |
 
 ## CloudFlare Warp
 | Command                                      | Information |
@@ -159,21 +174,22 @@
 |:------------------------------:|:-------------:|
 | sudo yay -S steamtinkerlaunch  | |
 
-+ **DSCVR**: ProtonUp
++ **DSCVR**: ProtonUp (ProtonGE for Steam, WineGE for Lutrix, and Luxtropedia for GOG)
 + **DSCVR**: Lutris
 + **DSCVR**: HeroicGamesLauncher
 
 > STEAM_COMPAT_MOUNTS=/run/media/mmcblk0p1 %command%
 
 ## Emulated Games
-| Command                                                                             | Information   |
-|:-----------------------------------------------------------------------------------:|:-------------:|
-
 + [EMUDECK](https://www.emudeck.com/EmuDeck.desktop)
-+ [ROMMAGAGER](https://github.com/SteamGridDB/steam-rom-manager/releases/tag/v2.3.40)
++ [Steam ROM Manager](https://github.com/SteamGridDB/steam-rom-manager/releases/tag/v2.3.40)
++ [BoilR](https://github.com/PhilipK/BoilR)
++ [GameHub](https://github.com/tkashkin/GameHub)
 
 ## Kodi
 | Command             | Information   |
 |:-------------------:|:-------------:|
 | sudo pacman -S kodi | |
 
+## Windows 11
++ https://github.com/media-a-server/Steam-Deck-Driver-Guide
