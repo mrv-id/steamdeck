@@ -1,7 +1,5 @@
 # Hitchhiker's Guide to the Steam Deck
 
-![logo](https://github.com/mrv-id/steamdeck/blob/main/logo.png)
-
 > The **[Steam Deck](https://www.steamdeck.com/en/)** (released on February 25, 2022) is a handheld gaming computer developed by **Valve**. It is powerd by AMD's RDNA 2 architecture, running **SteamOS** (a GNU/Linux Arch based disibutrion) designed to play both native and Windows emulated titles via the **Proton** compatibility layer, with the use of **FSR**.
 
 <!---
@@ -16,7 +14,7 @@
 | SSD (Plus)         | 265GB NVMe (PCIe Gen 3 x2)              |
 | SSD (Premium)      | 512GB NVMe (PCIe Gen 3 x4)              |
 
-| Display            | Information                              |
+| Display            | Information                             |
 |:------------------:|:---------------------------------------:|
 | Type               | LCD IPS (Optical Bonding)               |
 | Size               | 7"                                      |
@@ -77,11 +75,6 @@
 ![tech specs 2](https://github.com/mrv-id/steamdeck/blob/main/tech-specs-2.png)
 ![tech specs 3](https://github.com/mrv-id/steamdeck/blob/main/tech-specs-3.png)
 
-## Developer Mode
-+ System Settings: Enable Developer Mode
-+ Developer: CEF Remote Debugging
-+ Steam (Button) > Power > Switch to Desktop
-
 ## CheatSheet
 | Information                                                           | Command               |
 |:---------------------------------------------------------------------:|:---------------------:|
@@ -96,6 +89,13 @@
 | Remove installed software w/ it’s dependencies and clear system cache | sudo pacman -Rsc      |
 | Change mode of a script                                               | sudo chmod +x file.sh |
 | Execute script                                                        | sudo ./file.sh        |
+
+## Glossary
+
+## Developer Mode
++ System Settings: Enable Developer Mode
++ Developer: CEF Remote Debugging
++ Steam (Button) > Power > Switch to Desktop
 
 ## Admin Password
 | Command                       | Information |
