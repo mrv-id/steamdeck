@@ -54,10 +54,6 @@
 | Size               | 298mm x 117mm x 49mm                    |
 | Weight             | 669grams                                |
 
-![tech specs 1](https://github.com/mrv-id/steamdeck/blob/main/tech-specs-1.png)
-![tech specs 2](https://github.com/mrv-id/steamdeck/blob/main/tech-specs-2.png)
-![tech specs 3](https://github.com/mrv-id/steamdeck/blob/main/tech-specs-3.png)
-
 | Controls                     | Information                  |
 |:----------------------------:|:----------------------------:|
 | Directional Pad              | Up, Right, Down, Left        |
@@ -75,50 +71,90 @@
 | Haptics                      | Yes                          |
 | Gyro                         | 6-Axis IMU                   |
 
-## CheatSheet
+![tech specs 1](https://github.com/mrv-id/steamdeck/blob/main/tech-specs-1.png)
+![tech specs 2](https://github.com/mrv-id/steamdeck/blob/main/tech-specs-2.png)
+![tech specs 3](https://github.com/mrv-id/steamdeck/blob/main/tech-specs-3.png)
 
 > **Steam Button**, **Power**, and **Switch to Desktop**.
 
-| Information                                                           | Command          |
-|:---------------------------------------------------------------------:|:----------------:|
-| Save (as to install) new software                                     | pacman -S        |
-| Synchronize system repositories                                       | pacman -Sy       |
-| Update system software                                                | pacman -Su       |
-| Synchronize system repositories and update system software            | pacman -Syu      |
-| Remove installed software                                             | pacman -R        |
-| Remove installed software w/ it’s dependencies                        | pacman -Rs       |
-| Clear system cache                                                    | pacman -Sc       |
-| Completely clear system cache                                         | pacman -Scc      |
-| Remove installed software w/ it’s dependencies and clear system cache | pacman -Rsc      |
-| Change mode of a script                                               | chmod +x file.sh |
-| Execute script                                                        | ./file.sh        |
+## CheatSheet
+| Information                                                           | Command               |
+|:---------------------------------------------------------------------:|:---------------------:|
+| Save (as to install) new software                                     | sudo pacman -S        |
+| Synchronize system repositories                                       | sudo pacman -Sy       |
+| Update system software                                                | sudo pacman -Su       |
+| Synchronize system repositories and update system software            | sudo pacman -Syu      |
+| Remove installed software                                             | sudo pacman -R        |
+| Remove installed software w/ it’s dependencies                        | sudo pacman -Rs       |
+| Clear system cache                                                    | sudo pacman -Sc       |
+| Completely clear system cache                                         | sudo pacman -Scc      |
+| Remove installed software w/ it’s dependencies and clear system cache | sudo pacman -Rsc      |
+| Change mode of a script                                               | sudo chmod +x file.sh |
+| Execute script                                                        | sudo ./file.sh        |
+
+## Admin Password
+| Command                       | Information |
+|:-----------------------------:|:-----------:|
+| sudo passwd                   | |
+
+## SteamOS Readonly Policy
+| Command                       | Information |
+|:-----------------------------:|:-----------:|
+| sudo steamos-readonly disable | |
+
+## Package Manager Keyring
+| Command                              | Information |
+|:------------------------------------:|:-----------:|
+| sudo pacman-key --init               | |
+| sudo pacman-key --pupulate archlinux | |
+| sudo pacman-key --refresh            | |
+
+## Arch User Repository
+| Command                                          | Information |
+|:------------------------------------------------:|:-----------:|
+| sudo pacman -S git                               | |
+| sudo pacman -S base-devel                        | |
+| sudo git clone https://aur.archlinux.org/yay.git | |
+| cd yay                                           | |
+| sudo makepkg -si                                 | |
 
 ## Tools & Apps
-Install basic software.
+| Command                             | Information |
+|:-----------------------------------:|:-----------:|
+| sudo pacman -S bash-completion      | |
+| sudo pacman -S firefox              | |
+| sudo pacman -S qbittorrent          | |
+| sudo pacman -S inkscape             | |
+| sudo pacman -S audacity             | |
+| sudo yay -S bitwarden               | |
+| sudo yay -S megasync-bin            | |
+| sudo yay -S lutris                  | |
+| sudo yay -S discord                 | |
+| sudo yay -S spotify                 | |
+| sudo yay -S chiaki                  | |
+| sudo yay -S obs-studio              | |
+| sudo yay -S google-chrome-beta      | |
+| sudo yay -S microsoft-edge-beta-bin | |
 
-| Command                   | Information |
-|:-------------------------:|:-----------:|
-| pacman -S bash-completion | |
-| pacman -S firefox         | |
-| pacman -S qbittorrent     | |
-| pacman -S kodi            | |
+## CloudFlare Warp
+| Command                                      | Information |
+|:--------------------------------------------:|:-----------:|
+| sudo yay -S cloudflare-warp-bin              | |
+| sudo systemctl enable --now warp-svc.service | |
+| warp-cli register                            | |
+| warp-cli connect                             | |
+| warp-cli disconnect                          | |
+| warp-cli set-mode warp                       | |
+| warp-cli set mode warp+doh                   | |
 
 ## Neofetch
-Install and enable neofetch on terminal.
-
 | Command            | Information   |
 |:------------------:|:-------------:|
 | pacman -S neofetch | |
 | nano ~/.bashrc     | ADD: neofetch |
 | source ~/.bashrc   | |
 
-## AUR
-Install and enable Arch User Repository.
-
-| Command                                     | Information   |
-|:-------------------------------------------:|:-------------:|
-| pacman -S git                               | |
-| pacman -S base-devel                        |
-| git clone https://aur.archlinux.org/yay.git |
-| cd yay                                      |
-| makepkg -si                                 |
+## Kodi
+| Command            | Information   |
+|:------------------:|:-------------:|
+| sudo pacman -S kodi                 | |
