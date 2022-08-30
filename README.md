@@ -97,7 +97,7 @@
 |:-----------------------------:|:-----------:|
 | sudo passwd                   | |
 
-## SteamOS Readonly Policy
+## SteamOS Policy
 | Command                       | Information |
 |:-----------------------------:|:-----------:|
 | sudo steamos-readonly disable | |
@@ -128,13 +128,13 @@
 | sudo pacman -S audacity             | |
 | sudo yay -S bitwarden               | |
 | sudo yay -S megasync-bin            | |
-| sudo yay -S lutris                  | |
 | sudo yay -S discord                 | |
 | sudo yay -S spotify                 | |
 | sudo yay -S chiaki                  | |
 | sudo yay -S obs-studio              | |
 | sudo yay -S google-chrome-beta      | |
 | sudo yay -S microsoft-edge-beta-bin | |
+| **DSCVR**: Flatseal                 | |
 
 ## CloudFlare Warp
 | Command                                      | Information |
@@ -154,7 +154,26 @@
 | nano ~/.bashrc     | ADD: neofetch |
 | source ~/.bashrc   | |
 
+## Non-Steam Games
+| Command                        | Information   |
+|:------------------------------:|:-------------:|
+| sudo yay -S steamtinkerlaunch  | |
+
++ **DSCVR**: ProtonUp
++ **DSCVR**: Lutris
++ **DSCVR**: HeroicGamesLauncher
+
+> STEAM_COMPAT_MOUNTS=/run/media/mmcblk0p1 %command%
+
+## Emulated Games
+| Command                                                                             | Information   |
+|:-----------------------------------------------------------------------------------:|:-------------:|
+
++ [EMUDECK](https://www.emudeck.com/EmuDeck.desktop)
++ [ROMMAGAGER](https://github.com/SteamGridDB/steam-rom-manager/releases/tag/v2.3.40)
+
 ## Kodi
-| Command            | Information   |
-|:------------------:|:-------------:|
-| sudo pacman -S kodi                 | |
+| Command             | Information   |
+|:-------------------:|:-------------:|
+| sudo pacman -S kodi | |
+
