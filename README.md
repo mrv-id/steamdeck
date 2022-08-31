@@ -4,22 +4,24 @@ Date: August 31, 2022
 --->
 # Hitchhiker's Guide to the Steam Deck
 
-> [Steam Deck](https://www.steamdeck.com/en/) (released on February 25, 2022) is a handheld gaming computer developed by[Valve](https://www.valvesoftware.com/el/).
-It is powerd by an **x86-64 APU**, running [SteamOS](https://store.steampowered.com/steamos/download/?ver=steamdeck&snr=) — a [GNU/Linux Arch](https://archlinux.org/)
-based distribution. It is designed to play both native and Windows emulated titles via the [Proton](https://github.com/ValveSoftware/Proton) compatibility layer.
+> [Steam Deck](https://www.steamdeck.com/en/) (released on February 25, 2022) is a handheld gaming computer developed by [Valve](https://www.valvesoftware.com/el/). It is powerd by an **x86-64 APU**, running [SteamOS](https://store.steampowered.com/steamos/download/?ver=steamdeck&snr=) — a [GNU/Linux Arch](https://archlinux.org/) based distribution on [KDE Plasma](https://kde.org/plasma-desktop/). It is designed to play both native and Windows OS emulated titles via the [Proton](https://github.com/ValveSoftware/Proton) compatibility layer.
 
 ## Table of Contents
 
 <!--- ## Technical Specifications
 
-| Compute           | Information                              |
-|:------------------:|:---------------------------------------:|
-| CPU                | 4 Cores / 8 Threads, 2.4-3.5GHz (Zen 2) |
-| GPU                | 8 Compute Units, 1.0-1.6GHz (RDNA 2)    |
-| RAM                | 16GB (LPDDR5)                           |
-| SSD (Essential)    | 64GB (eMMC PCIe Gen 2 x1)               |
-| SSD (Plus)         | 265GB (NVMe PCIe Gen 3 x2)              |
-| SSD (Premium)      | 512GB (NVMe PCIe Gen 3 x4)              |
+| Compute | Information                             |
+|:-------:|:---------------------------------------:|
+| CPU     | 4 Cores / 8 Threads, 2.4-3.5GHz (Zen 2) |
+| GPU     | 8 Compute Units, 1.0-1.6GHz (RDNA 2)    |
+| RAM     | 16GB (LPDDR5)                           |
+
+| Storage         | Information                 |
+|:---------------:|:---------------------------:|
+| SSD (Essential) | 64GB (eMMC PCIe Gen 2 x1)   |
+| SSD (Plus)      | 265GB (NVMe PCIe Gen 3 x2)  |
+| SSD (Premium)   | 512GB (NVMe PCIe Gen 3 x4)  |
+| Expandable      | Yes (microSD, USH-I, A1/A2) |
 
 | Display              | Information     |
 |:--------------------:|:---------------:|
@@ -33,33 +35,29 @@ based distribution. It is designed to play both native and Windows emulated titl
 | Touch Sensitive      | Yes             |
 | Ambient Light Sensor | Yes             |
 
-| Audio              | Information             |
-|:------------------:|:------------------------:|
-| Speakers           | Yes (Stere)              |
-| Microphone         | Yes (Dual Array)         |
-| DSP                | Yes                      |
-| Audio Jack         | Yes (3.5mm Combo In/Out) |
+| Audio      | Information             |
+|:----------:|:------------------------:|
+| Speakers   | Yes (Stere)              |
+| Microphone | Yes (Dual Array)         |
+| DSP        | Yes                      |
+| Audio Jack | Yes (3.5mm Combo In/Out) |
 
-| Connectivity       | Information                             |
-|:------------------:|:---------------------------------------:|
-| Bluetooth          | 5.0                                     |
-| Wi-Fi              | 5 (802.11a/b/g/n/ac)                    |
-| Dual-Band          | 2 x 2 MIMO (2.4GHz & 5GHz)              |
+| Connectivity | Information                    |
+|:------------:|:-------------------------------:|
+| Bluetooth    | Yes (5.0)                       |
+| Wi-Fi        | Yes (5, 802.11a/b/g/n/ac)       |
+| Dual-Band    | Yes (2 x 2 MIMO, 2.4GHz & 5GHz) |
 
-| Expandable Storage | Information                             |
-|:------------------:|:---------------------------------------:|
-| Type               | microSD                                 |
-| Protocol           | UHS-I (A2)                              |
+| Battery       | Information            |
+|:-------------:|:----------------------:|
+| Capacity      | 40Whr                  |
+| Input         | Type-C (USB 3.2 Gen 2) |
+| Charging Rate | 45W, P.D. 3.0          |
 
-| Battery            | Information                             |
-|:------------------:|:---------------------------------------:|
-| Input              | USB 3.2 Gen 2, Type-C (45W, P.D. 3.0)   |
-| Battery            | 40Whr                                   |
-
-| Dimensions         | Information                             |
-|:------------------:|:---------------------------------------:|
-| Size               | 298mm x 117mm x 49mm                    |
-| Weight             | 669grams                                |
+| Dimensions | Information          |
+|:----------:|:--------------------:|
+| Size       | 298mm x 117mm x 49mm |
+| Weight     | 669grams             |
 
 | Controls                     | Information                  |
 |:----------------------------:|:----------------------------:|
@@ -76,11 +74,11 @@ based distribution. It is designed to play both native and Windows emulated titl
 | Left & Right Upper Buttons   | L4, R4                       |
 | Left & Right Lower Buttons   | L5, R5                       |
 | Haptics                      | Yes                          |
-| Gyro                         | 6-Axix (IMU)                 | --->
+| Gyro                         | 6-Axix (IMU)                 |
 
 ![tech specs 1](https://github.com/mrv-id/steamdeck/blob/main/tech-specs-1.png)
 ![tech specs 2](https://github.com/mrv-id/steamdeck/blob/main/tech-specs-2.png)
-![tech specs 3](https://github.com/mrv-id/steamdeck/blob/main/tech-specs-3.png)
+![tech specs 3](https://github.com/mrv-id/steamdeck/blob/main/tech-specs-3.png) --->
 
 ## Developer Mode
 + Steam (Button) > Settings > System > **Enable Developer Mode** (Toggle).
