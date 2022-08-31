@@ -170,6 +170,8 @@ Date: August 31, 2022
 05. GNU/Linux > Steam > Chrome (Right Click) > Properties > **Twitch**
 06. ... > Launch Options > --window-size=1024,640 --force-device-scale-factor=1.25 --device-scale-factor=1.25 --kiosk "https://www.twitch.tv/"
 
+<!--- [Assets Dimensions](https://partner.steamgames.com/doc/store/assets/standard) --->
+
 ## Decky Loader
 01. Steam (Button) > Settings > System > **Enable Developer Mode** (Toggle)
 02. Steam (Button) > Settings > Developer > **CEF Remote Debugging** (Toggle)
