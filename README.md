@@ -74,18 +74,18 @@ Date: August 31, 2022
 | Left & Right Upper Buttons   | L4, R4                       |
 | Left & Right Lower Buttons   | L5, R5                       |
 | Haptics                      | Yes                          |
-| Gyro                         | 6-Axix (IMU)                 |
+| Gyro                         | 6-Axix (IMU)                 | --->
 
 ![tech specs 1](https://github.com/mrv-id/steamdeck/blob/main/tech-specs-1.png)
 ![tech specs 2](https://github.com/mrv-id/steamdeck/blob/main/tech-specs-2.png)
-![tech specs 3](https://github.com/mrv-id/steamdeck/blob/main/tech-specs-3.png) --->
+![tech specs 3](https://github.com/mrv-id/steamdeck/blob/main/tech-specs-3.png)
 
 ## Developer Mode
 + Steam (Button) > Settings > System > **Enable Developer Mode** (Toggle).
 + Steam (Button) > Settings > Developer > **CEF Remote Debugging** (Toggle).
 + Steam (Button) > Power > Switch to Desktop.
 
-## CheatSheet
+<!--- ## CheatSheet
 | No | Command               | Information                                                  |
 |:--:|:---------------------:|:------------------------------------------------------------:|
 | 01 | sudo pacman -S        | Save (/install) software                                     |
@@ -98,7 +98,7 @@ Date: August 31, 2022
 | 08 | sudo pacman -Scc      | Completely clear system cache                                |
 | 09 | sudo pacman -Rsc      | (06) + (07)                                                  |
 | 10 | sudo chmod +x file.sh | Change mode (/permissions) of a script                       |
-| 11 | sudo ./file.sh        | Execute script                                               |
+| 11 | sudo ./file.sh        | Execute script                                               | --->
 
 ## Admin Password
 | No | Command                       | Information                 |
@@ -123,7 +123,7 @@ Date: August 31, 2022
 | 01 | sudo pacman -Syu                                 | Synchronize (/compare) local software to remote repositories & update them |
 | 02 | sudo pacman -S git                               | Install the git management tool                                            |
 | 03 | sudo pacman -S base-devel                        | Install tools needed for source compiling software                         |
-| 04 | sudo git clone https://aur.archlinux.org/yay.git | Clone (/download) the YAY repository to a local folder                     |
+| 04 | sudo git clone https://aur.archlinux.org/yay.git | Clone (/download) the YAY repository to a local directory                  |
 | 05 | cd yay                                           | Change directory to the "Yet Another Yogurt" folder                        |
 | 06 | sudo makepkg -si                                 | Make (/build) the YAY package                                              |
 | 07 | sudo yay                                         | (01) + yay -Syu                                                            |
@@ -131,20 +131,23 @@ Date: August 31, 2022
 <!--- YOGURT: Yet AnOther User Repository Tool --->
 
 ## Tools & Apps
-| Command                             | Information |
-|:-----------------------------------:|:-----------:|
-| sudo pacman -S bash-completion      | |
-| sudo pacman -S firefox              | |
-| sudo pacman -S qbittorrent          | |
-| sudo yay -S bitwarden               | |
-| sudo yay -S megasync-bin            | |
-| sudo yay -S annotator               | |
-| sudo yay -S discord                 | |
-| sudo yay -S spotify                 | |
-| sudo yay -S chiaki                  | |
-| sudo yay -S obs-studio              | |
-| sudo yay -S google-chrome-beta      | |
-| sudo yay -S microsoft-edge-beta-bin | |
+| No | Command                             | Information                                                        |
+|:--:|:-----------------------------------:|:------------------------------------------------------------------:|
+| 01 | sudo pacman -S bash-completion      | A TUI tool to autocomplete commands by pressing the "TAB" keycap   |
+| 02 | sudo pacman -S firefox              | A GUI app to browse the intenet (/Mozilla)                         |
+| 03 | sudo pacman -S qbittorrent          | A GUI app to download / upload torrent files                       |
+| 04 | sudo yay -S bitwarden               | A GUI app to manage login credentials                              |
+| 05 | sudo yay -S megasync-bin            | A GUI app to synchronize a MEGA cloud drive with a local directory |
+| 06 | sudo yay -S annotator               | A GUI app to anotate images                                        |
+| 07 | sudo yay -S discord                 | A GUI app to join & chat with communities                          |
+| 08 | sudo yay -S spotify                 | A GUI app to listen to music                                       |
+| 09 | sudo yay -S chiaki                  | A GUI app to remote connect to a PS4 / PS5 console (/PS_Remote)    |
+| 10 | sudo yay -S google-chrome-beta      | A GUI app to browse the intenet (/Google)                          |
+| 11 | sudo yay -S microsoft-edge-beta-bin | A GUI app to browse the intenet (/Microsoft)                       |
+
+<!--- Firefox: core browsing --->
+<!--- Google: web shortcuts --->
+<!--- Microsoft: xCloud --->
 
 ## WebSite Shortcuts
 + **DSCVR**: Flatseal
