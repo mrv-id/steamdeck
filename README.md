@@ -80,11 +80,6 @@ Date: August 31, 2022
 ![tech specs 2](https://github.com/mrv-id/steamdeck/blob/main/tech-specs-2.png)
 ![tech specs 3](https://github.com/mrv-id/steamdeck/blob/main/tech-specs-3.png)
 
-## Developer Mode
-+ Steam (Button) > Settings > System > **Enable Developer Mode** (Toggle).
-+ Steam (Button) > Settings > Developer > **CEF Remote Debugging** (Toggle).
-+ Steam (Button) > Power > Switch to Desktop.
-
 <!--- ## CheatSheet
 | No | Command               | Information                                                  |
 |:--:|:---------------------:|:------------------------------------------------------------:|
@@ -94,8 +89,8 @@ Date: August 31, 2022
 | 04 | sudo pacman -Syu      | (02) + (03)                                                  |
 | 05 | sudo pacman -R        | Remove installed software                                    |
 | 06 | sudo pacman -Rs       | Remove installed software w/ dependencies                    |
-| 07 | sudo pacman -Sc       | Clear system cache                                           |
-| 08 | sudo pacman -Scc      | Completely clear system cache                                |
+| 07 | sudo pacman -Sc       | Clear pacman cache                                           |
+| 08 | sudo pacman -Scc      | Completely clear pacman cache                                |
 | 09 | sudo pacman -Rsc      | (06) + (07)                                                  |
 | 10 | sudo chmod +x file.sh | Change mode (/permissions) of a script                       |
 | 11 | sudo ./file.sh        | Execute script                                               | --->
@@ -134,28 +129,56 @@ Date: August 31, 2022
 | No | Command                             | Information                                                        |
 |:--:|:-----------------------------------:|:------------------------------------------------------------------:|
 | 01 | sudo pacman -S bash-completion      | A TUI tool to autocomplete commands by pressing the "TAB" keycap   |
-| 02 | sudo pacman -S firefox              | A GUI app to browse the intenet (/Mozilla)                         |
 | 03 | sudo pacman -S qbittorrent          | A GUI app to download / upload torrent files                       |
 | 04 | sudo yay -S bitwarden               | A GUI app to manage login credentials                              |
 | 05 | sudo yay -S megasync-bin            | A GUI app to synchronize a MEGA cloud drive with a local directory |
 | 06 | sudo yay -S annotator               | A GUI app to anotate images                                        |
 | 07 | sudo yay -S discord                 | A GUI app to join & chat with communities                          |
 | 08 | sudo yay -S spotify                 | A GUI app to listen to music                                       |
-| 09 | sudo yay -S chiaki                  | A GUI app to remote connect to a PS4 / PS5 console (/PS_Remote)    |
-| 10 | sudo yay -S google-chrome-beta      | A GUI app to browse the intenet (/Google)                          |
-| 11 | sudo yay -S microsoft-edge-beta-bin | A GUI app to browse the intenet (/Microsoft)                       |
+| 09 | sudo yay -S chiaki                  | A GUI app to remote connect to a PS4 / PS5 console                 |
+| 10 | sudo pacman -Rsc firefox            | Remove Firefox w/ dependencies & clear pacman cache                |
 
-<!--- Firefox: core browsing --->
-<!--- Google: web shortcuts --->
-<!--- Microsoft: xCloud --->
+<!--- GNU/Linux > Dolphin > Downloads > qBitTorrent > .temp --->
 
 ## WebSite Shortcuts
-+ **DSCVR**: Flatseal
-Fileystem: /run/udev:ro
-LAUNCH OPTIONS: --window-size=1024,640 --force-device-scale-factor=1.25 --device-scale-factor=1.25 --kiosk "https://www.google.com"
+01. GNU/Linux > Discover (Store) > **Flatseal** (Install)
+02. GNU/Linux > Discover (Store) > **Chrome** (Install)
+03. GNU/Linux > Flatseal > Chrome > Filesystem > **/run/udev:ro** (ADD)
+
+### ProtonMail
+01. GNU/Linux > Chrome (Right Click) > **Add to Steam**
+02. GNU/Linux > Steam > Chrome (Right Click) > Properties > **ProtonMail**
+03. ... > Launch Options > --window-size=1024,640 --force-device-scale-factor=1.25 --device-scale-factor=1.25 --kiosk "https://proton.me/"
+
+### SteamDB
+01. GNU/Linux > Chrome (Right Click) > **Add to Steam**
+02. GNU/Linux > Steam > Chrome (Right Click) > Properties > **SteamDB**
+03. ... > Launch Options > --window-size=1024,640 --force-device-scale-factor=1.25 --device-scale-factor=1.25 --kiosk "https://steamdb.info/"
+
+### ProtonDB
+01. GNU/Linux > Chrome (Right Click) > **Add to Steam**
+02. GNU/Linux > Steam > Chrome (Right Click) > Properties > **ProtonDB**
+03. ... > Launch Options > --window-size=1024,640 --force-device-scale-factor=1.25 --device-scale-factor=1.25 --kiosk "https://www.protondb.com/"
+
+### YouTube
+01. GNU/Linux > Chrome (Right Click) > **Add to Steam**
+05. GNU/Linux > Steam > Chrome (Right Click) > Properties > **YouTube**
+06. ... > Launch Options > --window-size=1024,640 --force-device-scale-factor=1.25 --device-scale-factor=1.25 --kiosk "https://www.youtube.com"
+
+### Twitch
+01. GNU/Linux > Chrome (Right Click) > **Add to Steam**
+05. GNU/Linux > Steam > Chrome (Right Click) > Properties > **Twitch**
+06. ... > Launch Options > --window-size=1024,640 --force-device-scale-factor=1.25 --device-scale-factor=1.25 --kiosk "https://www.twitch.tv/"
 
 ## Decky Loader
-+ curl -L https://github.com/SteamDeckHomebrew/decky-loader/raw/main/dist/install_prerelease.sh | sh
+01. Steam (Button) > Settings > System > **Enable Developer Mode** (Toggle)
+02. Steam (Button) > Settings > Developer > **CEF Remote Debugging** (Toggle)
+03. Steam (Button) > Power > **Switch to Desktop**
+04. GNU/Linux > **Konsole**:
+
+| Command                                                                                            | Information                                     |
+|:--------------------------------------------------------------------------------------------------:|:-----------------------------------------------:|
+| curl -L https://github.com/SteamDeckHomebrew/decky-loader/raw/main/dist/install_prerelease.sh | sh | Automated install script for the plugin manager |
 
 ## Replay Sorcery
 | Command                    | Information |
