@@ -1,6 +1,12 @@
+<!---
+Author: Argi Pent
+Date: August 31, 2022
+--->
 # Hitchhiker's Guide to the Steam Deck
 
-> The **[Steam Deck](https://www.steamdeck.com/en/)** (released on February 25, 2022) is a handheld gaming computer (in the likes of Nintendo Switch) developed by **Valve**. It is powerd by AMD's RDNA 2 architecture (same as Xbox Series S/X and PlayStation 5), running **SteamOS** (a GNU/Linux Arch based disibutrion, with KDE Plasma) designed to play both native and Windows emulated titles via the **Proton** compatibility layer, with or w/out the use of **FSR**.
+> [Steam Deck](https://www.steamdeck.com/en/) (released on February 25, 2022) is a handheld gaming computer developed by[Valve](https://www.valvesoftware.com/el/).
+It is powerd by an **x86-64 APU**, running [SteamOS](https://store.steampowered.com/steamos/download/?ver=steamdeck&snr=) — a [GNU/Linux Arch](https://archlinux.org/)
+based distribution. It is designed to play both native and Windows emulated titles via the [Proton](https://github.com/ValveSoftware/Proton) compatibility layer.
 
 ## Table of Contents
 
@@ -99,12 +105,12 @@
 ## Admin Password
 | No | Command                       | Information                 |
 |:--:|:-----------------------------:|:---------------------------:|
-| 01 | sudo passwd                   | Set password for super-user |
+| 00 | sudo passwd                   | Set password for super-user |
 
 ## SteamOS Policy
 | No | Command                       | Information                                 |
 |:--:|:-----------------------------:|:-------------------------------------------:|
-| 01 | sudo steamos-readonly disable | Disable operating system's read-only policy |
+| 00 | sudo steamos-readonly disable | Disable operating system's read-only policy |
 
 ## Package Manager Keyring
 | No | Command                              | Information                                             |
