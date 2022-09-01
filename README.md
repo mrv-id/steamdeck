@@ -81,6 +81,7 @@ Date: August 31, 2022
 
 ## Shortcuts
 > .
+
 | No | Combination                  | Information                  |
 |:--:|:----------------------------:|:----------------------------:|
 | 01 | STEAM + B                    | Force the game to shutdown   |
@@ -100,6 +101,7 @@ Date: August 31, 2022
 
 ## CheatSheet
 > .
+
 | No | Command               | Information                                                  |
 |:--:|:---------------------:|:------------------------------------------------------------:|
 | 01 | sudo pacman -S        | Save (/install) software                                     |
@@ -116,18 +118,21 @@ Date: August 31, 2022
 
 ## Admin Password
 > .
+
 | No | Command                       | Information                 |
 |:--:|:-----------------------------:|:---------------------------:|
 | 00 | sudo passwd                   | Set password for super-user |
 
 ## SteamOS Policy
 > .
+
 | No | Command                       | Information                                 |
 |:--:|:-----------------------------:|:-------------------------------------------:|
 | 00 | sudo steamos-readonly disable | Disable operating system's read-only policy |
 
 ## Package Manager Keyring
 > .
+
 | No | Command                              | Information                                             |
 |:--:|:------------------------------------:|:-------------------------------------------------------:|
 | 01 | sudo pacman-key --init               | Initialize package manager's keyring process            |
@@ -136,6 +141,7 @@ Date: August 31, 2022
 
 ## Arch User Repository
 > .
+
 | No | Command                                          | Information                                                                |
 |:--:|:------------------------------------------------:|:--------------------------------------------------------------------------:|
 | 01 | sudo pacman -Syu                                 | Synchronize (/compare) local software to remote repositories & update them |
@@ -150,6 +156,7 @@ Date: August 31, 2022
 
 ## Tools & Apps
 > .
+
 | No | Command                             | Information                                                        |
 |:--:|:-----------------------------------:|:------------------------------------------------------------------:|
 | 01 | sudo pacman -S bash-completion      | A TUI tool to autocomplete commands by pressing the "TAB" keycap   |
@@ -166,6 +173,7 @@ Date: August 31, 2022
 
 ## WebSite Shortcuts
 > .
+
 01. GNU/Linux > Discover (Store) > **Flatseal** (Install)
 02. GNU/Linux > Discover (Store) > **Chrome** (Install)
 03. GNU/Linux > Flatseal > Chrome > Filesystem > **/run/udev:ro** (ADD)
@@ -199,6 +207,7 @@ Date: August 31, 2022
 
 ## Decky Loader
 > .
+
 01. Steam (Button) > Settings > System > **Enable Developer Mode** (Toggle)
 02. Steam (Button) > Settings > Developer > **CEF Remote Debugging** (Toggle)
 03. Steam (Button) > Power > **Switch to Desktop**
@@ -210,6 +219,7 @@ Date: August 31, 2022
 
 ## Replay Sorcery
 > .
+
 | No | Command                                           | Information                                   |
 |:--:|:-------------------------------------------------:|:---------------------------------------------:|
 | 01 | sudo yay -S replay-sorcery                        | A TUI tool to screen capture while gaming     |
@@ -229,6 +239,7 @@ Date: August 31, 2022
 
 ## CloudFlare Warp
 > .
+
 | Command                                      | Information |
 |:--------------------------------------------:|:-----------:|
 | sudo yay -S cloudflare-warp-bin              | |
@@ -241,6 +252,7 @@ Date: August 31, 2022
 
 ## Neofetch
 > .
+
 | Command            | Information   |
 |:------------------:|:-------------:|
 | pacman -S neofetch | |
@@ -249,6 +261,7 @@ Date: August 31, 2022
 
 ## Non-Steam Games
 > .
+
 | Command                        | Information   |
 |:------------------------------:|:-------------:|
 | sudo yay -S steamtinkerlaunch  | |
@@ -261,6 +274,7 @@ Date: August 31, 2022
 
 ## Emulated Games
 > .
+
 + Steam (Button) > Settings > System: Format SD Card
 + [EMUDECK](https://www.emudeck.com/EmuDeck.desktop)
 + [Steam ROM Manager](https://github.com/SteamGridDB/steam-rom-manager/releases/tag/v2.3.40)
@@ -269,10 +283,12 @@ Date: August 31, 2022
 
 ## Kodi
 > .
+
 | Command             | Information   |
 |:-------------------:|:-------------:|
 | sudo pacman -S kodi | |
 
 ## Windows 11
 > .
+
 + https://github.com/media-a-server/Steam-Deck-Driver-Guide
