@@ -163,14 +163,14 @@ YOGURT: Yet AnOther User Repository Tool
 --->
 
 ## Flatpak Permissions
-> [Flatpaks](https://flatpak.org/) are sandboxed applications, contaning all the needed dependacies inside their packaged environment, meaning that it is much harder for them to brake due to a faulty updates. That comes at the cost of not communicating out-of-the-box with the opertaing system and the rest of the apps. To overcome this problem, [Flatseal](https://flathub.org/apps/details/com.github.tchx84.Flatseal) works like a GUI front-end permissions manager.
+> [Flatpaks](https://flatpak.org/) are sandboxed, disto agnostic applications, contaning all the needed dependacies inside their packaged environment, meaning that it is much harder for them to brake due to a faulty updates. That comes at the cost of not communicating out-of-the-box with the opertaing system and the rest of the apps. To overcome this problem, [Flatseal](https://flathub.org/apps/details/com.github.tchx84.Flatseal) works like a GUI front-end permissions manager.
 
 | No | Command                                                     | Information                              |
 |:--:|:-----------------------------------------------------------:|:----------------------------------------:|
 | 00 | https://flathub.org/apps/details/com.github.tchx84.Flatseal | A GUI tool to manage flatpak permissions |
 
 ## Tools & Apps
-> Users can install / remove software either though the **Discover** (Store), or the command line.
+> Users can install / remove software either though **Discover** (Software Center), or the command line.
 
 ### Pacman
 
@@ -220,7 +220,7 @@ YOGURT: Yet AnOther User Repository Tool
 --->
 
 ## Web-Apps
-> There are three more types of software, **Web-Apps**, **Flatpaks** and **AppImages**, **Scripts**. The first ones are web-pages converted into full-screen applications (see. YouTube, Twitch, etc.), while the other two are "distro agnostic" packages, meaning that they can run on both Arch-based, Debian-based and Fedora-based distributions.
+> **Web-Apps** are web-pages converted into full-screen applications that can then be accessed through the Steam UI.
 
 ### ProtonMail
 01. Super > Chrome (Right Click) > **Add to Steam**
@@ -238,16 +238,26 @@ YOGURT: Yet AnOther User Repository Tool
 03. ... > Launch Options > --window-size=1024,640 --force-device-scale-factor=1.25 --device-scale-factor=1.25 --kiosk "https://www.protondb.com/"
 
 ### YouTube
-01. GNU/Linux > Chrome (Right Click) > **Add to Steam**
-05. GNU/Linux > Steam > Chrome (Right Click) > Properties > **YouTube**
+01. Super > Chrome (Right Click) > **Add to Steam**
+05. Super > Steam > Chrome (Right Click) > Properties > **YouTube**
 06. ... > Launch Options > --window-size=1024,640 --force-device-scale-factor=1.25 --device-scale-factor=1.25 --kiosk "https://www.youtube.com"
 
-### Twitch
-01. GNU/Linux > Chrome (Right Click) > **Add to Steam**
-05. GNU/Linux > Steam > Chrome (Right Click) > Properties > **Twitch**
-06. ... > Launch Options > --window-size=1024,640 --force-device-scale-factor=1.25 --device-scale-factor=1.25 --kiosk "https://www.twitch.tv/"
+### MapGenie
+01. Super > Chrome (Right Click) > **Add to Steam**
+05. Super > Steam > Chrome (Right Click) > Properties > **MapGenie**
+06. ... > Launch Options > --window-size=1024,640 --force-device-scale-factor=1.25 --device-scale-factor=1.25 --kiosk "https://mapgenie.io/"
 
-<!--- [Assets Dimensions](https://partner.steamgames.com/doc/store/assets/standard) --->
+<!---
+### xCloud
+01. Super > Edge (Right Click) > **Add to Steam**
+05. Super > Steam > Edge (Right Click) > Properties > **xCloud**
+06. ... > Launch Options > --window-size=1024,640 --force-device-scale-factor=1.25 --device-scale-factor=1.25 --kiosk "https://www.xbox.com/en-US/play"
+
+### GeForce Now
+01. Super > Edge (Right Click) > **Add to Steam**
+05. Super > Steam > Edge (Right Click) > Properties > **GeForce Now**
+06. ... > Launch Options > --window-size=1024,640 --force-device-scale-factor=1.25 --device-scale-factor=1.25 --kiosk "https://play.geforcenow.com/"
+--->
 
 ## Decky Loader
 > .
@@ -255,7 +265,7 @@ YOGURT: Yet AnOther User Repository Tool
 01. Steam (Button) > Settings > System > **Enable Developer Mode** (Toggle)
 02. Steam (Button) > Settings > Developer > **CEF Remote Debugging** (Toggle)
 03. Steam (Button) > Power > **Switch to Desktop**
-04. GNU/Linux > **Konsole**:
+04. Super > **Konsole**:
 
 | Νο | Command                                                                                            | Information                                     |
 |:--:|:--------------------------------------------------------------------------------------------------:|:-----------------------------------------------:|
