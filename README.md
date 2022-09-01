@@ -173,6 +173,8 @@ YOGURT: Yet AnOther User Repository Tool
 > Users can install / remove software either though the **Discover** (Store), or the command line.
 
 ### Pacman
+
+#### Install
 | No | Command                             | Information                                                        |
 |:--:|:-----------------------------------:|:------------------------------------------------------------------:|
 | 01 | sudo pacman -S bash-completion      | A TUI tool to autocomplete commands by pressing the "TAB" keycap   |
@@ -180,6 +182,7 @@ YOGURT: Yet AnOther User Repository Tool
 | 03 | sudo pacman -S qbittorrent          | A GUI app to download / upload torrent files                       |
 | 04 | sudo pacman -S papirus-icon-theme   | A GUI theme for the system icons                                   |
 
+#### Remove
 | No | Command                             | Information                                                        |
 |:--:|:-----------------------------------:|:------------------------------------------------------------------:|
 | 00 | sudo pacman -Rsc firefox            | Remove Firefox w/ dependencies & clear pacman cache                |
@@ -195,12 +198,15 @@ YOGURT: Yet AnOther User Repository Tool
 | 06 | sudo yay -S chiaki                  | A GUI app to remote connect to a PS4 / PS5 console                 |
 
 ### Flatpak
+
+#### Install
 | No | Command                                             | Information                                              |
 |:--:|:---------------------------------------------------:|:--------------------------------------------------------:|
 | 01 | flatpak install flathub com.google.Chrome           | A GUI app to browse the internet                         |
 | 02 | flatpak install flathub com.microsoft.Edge          | A GUI app to browse the internet                         |
 | 03 | flatpak install flathub com.github.KRTirtho.Spotube | A GUI app to listen to Spofity & YouTube music w/out ads |
 
+#### Permissionss
 | No | Command                                                                       | Information                                   |
 |:--:|:-----------------------------------------------------------------------------:|:---------------------------------------------:|
 | 01 | flatpak --user override --filesystem=/run/udev:ro com.google.Chrome           | Access the device events management subsystem |
