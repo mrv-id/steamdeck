@@ -80,7 +80,7 @@ Date: August 31, 2022
 ![tech specs 3](https://github.com/mrv-id/steamdeck/blob/main/tech-specs-3.png)
 
 ## Shortcuts
-> .
+> The official **Steam Input** button shortcuts.
 
 | No | Combination                  | Information                  |
 |:--:|:----------------------------:|:----------------------------:|
@@ -100,7 +100,10 @@ Date: August 31, 2022
 | 01 | STEAM + D-Pad Left           | Escape key                   |
 
 ## CheatSheet
-> .
+> The unofficial **GNU/Linux Arch-based distribution** terminal cheatsheet. Any command that alters the system — even in the merest way — needs root access. The [sudo](https://man7.org/linux/man-pages/man8/sudo.8.html) prefix allows a permitted user to execute a command as the super user.
+
+01. STEAM > Power > **Switch to Desktop**
+02. GNU/Linux > **Konsole**
 
 | No | Command               | Information                                                  |
 |:--:|:---------------------:|:------------------------------------------------------------:|
@@ -116,15 +119,15 @@ Date: August 31, 2022
 | 10 | sudo chmod +x file.sh | Change mode (/permissions) of a script                       |
 | 11 | sudo ./file.sh        | Execute script                                               |
 
-## Admin Password
-> .
+## Super User Password
+> The use of the sudo command needs for the administrator to have a safety password set.
 
 | No | Command                       | Information                 |
 |:--:|:-----------------------------:|:---------------------------:|
 | 00 | sudo passwd                   | Set password for super-user |
 
 ## SteamOS Policy
-> .
+> Valve ships SteamOS locked, so that non-linux users don't mess around with system files — and for bug reporting and reproduction to be consistent. But, it encourages tech-savvy users to disable the read-only policy.
 
 | No | Command                       | Information                                 |
 |:--:|:-----------------------------:|:-------------------------------------------:|
@@ -171,7 +174,7 @@ Date: August 31, 2022
 
 <!--- GNU/Linux > Dolphin > Downloads > qBitTorrent > .temp --->
 
-## WebSite Shortcuts
+## Web-Apps
 > .
 
 01. GNU/Linux > Discover (Store) > **Flatseal** (Install)
@@ -226,6 +229,7 @@ Date: August 31, 2022
 | 02 | sudo systemctl --user enable --now replay-sorcery | Enable the background service through systemd |
 | 03 | sudo nano ~/.config/replay-sorcery.conf           | **SEE.**                                      |
 | 04 | sudo systemctl --user restart replay-sorcery      | Restart the background service                |
+| 05 | Ctrl+Super+R                                      | Screen capture the last seconds of gameplay   |
 
 **SEE.**
 + recordSeconds = 60
@@ -234,8 +238,6 @@ Date: August 31, 2022
 + videoHeight = 800
 + videoFramerate = 24
 + videoEncoder = hevc
-
-+ Use "Ctrl+Super+R" as a combo command on Steam Input to capture video.
 
 ## CloudFlare Warp
 > .
