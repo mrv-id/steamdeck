@@ -8,7 +8,8 @@ Date: August 31, 2022
 
 ## Table of Contents
 
-<!--- ## Technical Specifications
+<!---
+## Technical Specifications
 
 | Compute | Information                             |
 |:-------:|:---------------------------------------:|
@@ -74,7 +75,8 @@ Date: August 31, 2022
 | Left & Right Upper Buttons   | L4, R4                       |
 | Left & Right Lower Buttons   | L5, R5                       |
 | Haptics                      | Yes                          |
-| Gyro                         | 6-Axix (IMU)                 | --->
+| Gyro                         | 6-Axix (IMU)                 |
+--->
 
 ![tech specs 1](https://github.com/mrv-id/steamdeck/blob/main/tech-specs-1.png)
 ![tech specs 2](https://github.com/mrv-id/steamdeck/blob/main/tech-specs-2.png)
@@ -156,10 +158,12 @@ Date: August 31, 2022
 | 06 | sudo makepkg -si                                 | Make (/build) the YAY package                                              |
 | 07 | sudo yay                                         | (01) + yay -Syu                                                            |
 
-<!--- YOGURT: Yet AnOther User Repository Tool --->
+<!---
+YOGURT: Yet AnOther User Repository Tool
+--->
 
 ## Flatpak Permissions
-> [Flatpaks](https://flatpak.org/) are sandboxed applications, contaning all the needed dependacies inside their packaged environment, meaning that it is much harder for them to brake due to a faulty updates. That comes at the cost of not communicating out-of-the-box with the opertaing system and the rest of the apps. To overcome this problem, [Flatseal](https://flathub.org/apps/details/com.github.tchx84.Flatseal) works like a permissions manager GUI front-end.
+> [Flatpaks](https://flatpak.org/) are sandboxed applications, contaning all the needed dependacies inside their packaged environment, meaning that it is much harder for them to brake due to a faulty updates. That comes at the cost of not communicating out-of-the-box with the opertaing system and the rest of the apps. To overcome this problem, [Flatseal](https://flathub.org/apps/details/com.github.tchx84.Flatseal) works like a GUI front-end permissions manager.
 
 | No | Command                                                     | Information                              |
 |:--:|:-----------------------------------------------------------:|:----------------------------------------:|
@@ -191,17 +195,26 @@ Date: August 31, 2022
 | 06 | sudo yay -S chiaki                  | A GUI app to remote connect to a PS4 / PS5 console                 |
 
 ### Flatpak
-| No | Command                                             | Information                                                        |
-|:--:|:---------------------------------------------------:|:------------------------------------------------------------------:|
-| 01 | flatpak install flathub com.google.Chrome           | 
-| 02 | flatpak install flathub com.github.KRTirtho.Spotube | 
+| No | Command                                             | Information                                              |
+|:--:|:---------------------------------------------------:|:--------------------------------------------------------:|
+| 01 | flatpak install flathub com.google.Chrome           | A GUI app to browse the internet                         |
+| 02 | flatpak install flathub com.microsoft.Edge          | A GUI app to browse the internet                         |
+| 03 | flatpak install flathub com.github.KRTirtho.Spotube | A GUI app to listen to Spofity & YouTube music w/out ads |
 
-<!--- GNU/Linux > Dolphin > Downloads > qBitTorrent > .temp --->
+| No | Command                                                                       | Information                                   |
+|:--:|:-----------------------------------------------------------------------------:|:---------------------------------------------:|
+| 01 | flatpak --user override --filesystem=/run/udev:ro com.google.Chrome           | Access the device events management subsystem |
+| 01 | flatpak --user override --filesystem=/run/udev:ro com.microsoft.Edge          | Access the device events management subsystem |
+| 01 | flatpak --user override --filesystem=/run/udev:ro com.github.KRTirtho.Spotube | Access the device events management subsystem |
+
+<!--- 
++ Super > Flatseal > Chrome > Filesystem > **/run/udev:ro** (ADD)
++ Super > Flatseal > Edge > Filesystem > **/run/udev:ro** (ADD)
++ Super > Flatseal > Spottube > Filesystem > **/run/udev:ro** (ADD)
+--->
 
 ## Web-Apps
 > There are three more types of software, **Web-Apps**, **Flatpaks** and **AppImages**, **Scripts**. The first ones are web-pages converted into full-screen applications (see. YouTube, Twitch, etc.), while the other two are "distro agnostic" packages, meaning that they can run on both Arch-based, Debian-based and Fedora-based distributions.
-
-02. Super > Flatseal > Chrome > Filesystem > **/run/udev:ro** (ADD)
 
 ### ProtonMail
 01. Super > Chrome (Right Click) > **Add to Steam**
