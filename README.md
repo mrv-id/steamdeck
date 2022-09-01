@@ -104,7 +104,7 @@ Date: August 31, 2022
 > The unofficial **GNU/Linux Arch-based distribution** terminal cheatsheet.
 
 01. STEAM > Power > **Switch to Desktop**
-02. GNU/Linux > **Konsole**
+02. Super > **Konsole**
 
 | No | Command               | Information                                                  |
 |:--:|:---------------------:|:------------------------------------------------------------:|
@@ -120,22 +120,22 @@ Date: August 31, 2022
 | 10 | sudo chmod +x file.sh | Change mode (/permissions) of a script                       |
 | 11 | sudo ./file.sh        | Execute script                                               |
 
-## Super User Password
-> Any command that alters the system — even in the merest way — needs root access. The [sudo](https://man7.org/linux/man-pages/man8/sudo.8.html) prefix allows a permitted user to execute a command as the super-user. For the **Super User DO** command to work one needs for the administrator to set a password first.
+## Root User Password
+> Any command that alters the system — even in the merest way — needs root access. The [sudo](https://man7.org/linux/man-pages/man8/sudo.8.html) prefix allows a permitted user to execute a command as the super-user. For the **Super User DO** command to work though one needs for the administrator to set a password first.
 
 | No | Command                       | Information                 |
 |:--:|:-----------------------------:|:---------------------------:|
-| 00 | sudo passwd                   | Set password for super-user |
+| 00 | sudo passwd                   | Set password for root user  |
 
-## Operatin System Policy
-> Valve ships SteamOS locked so that reporting and reproduction of bugs to be consistent. But, it encourages tech-savvy users to disable the read-only policy and use the Arch-based GNU/Linux distribution behind the gaming-mode at it's full potential.
+## Ready Only Policy
+> Valve ships SteamOS locked so that reporting and reproduction of bugs to be consistent. But, it encourages tech-savvy users to disable the read-only policy and use the operating system behind the steam UI at it's full potential.
 
 | No | Command                       | Information                                 |
 |:--:|:-----------------------------:|:-------------------------------------------:|
 | 00 | sudo steamos-readonly disable | Disable operating system's read-only policy |
 
-## Package Manager
-> Now that the filesystem is free from the read-only policy, the **PACkage MANager**, which is responsible for installing, syncing, updating, and removing every bit of software on the distribution must be initialized. The following [pacman](https://archlinux.org/pacman/pacman.8.html) commands will make use the appropirate keyrings to ensure a safe transaction between the locally installed software and the ones saved on the Arch repository servers.
+## Package Manager Keyrings
+> To install applications, the **PACkage MANager**, which is responsible for these kind of things (see. installing, syncing, updating, and removing every bit of software on the distribution) must be initialized. The following [pacman](https://archlinux.org/pacman/pacman.8.html) commands will make use of the appropirate keyrings to ensure a safe transaction between the locally installed software and the ones saved on the Arch repository servers.
 
 | No | Command                              | Information                                             |
 |:--:|:------------------------------------:|:-------------------------------------------------------:|
@@ -144,7 +144,7 @@ Date: August 31, 2022
 | 03 | sudo pacman-key --refresh            | Refresh the keyring process                             |
 
 ## Arch User Repository
-> Except for the official repository, there is also a user-maintained repo, containing packaging instructions for every piece of software that has not yet made it into the main channel. To install applications from the [AUR](https://aur.archlinux.org/) users must build them from scratch — a time consuming process. Thus, the use of a special package manager is mandatory, enter [yay](https://github.com/Jguer/yay).
+> There is also a user-maintained repository, containing packaging instructions for every piece of software that has not yet made it into the official repo. To install applications from the [AUR](https://aur.archlinux.org/) users must build them from scratch — a time consuming process. Thus, the use of a special package manager is mandatory, enter [yay](https://github.com/Jguer/yay).
 
 | No | Command                                          | Information                                                                |
 |:--:|:------------------------------------------------:|:--------------------------------------------------------------------------:|
@@ -158,43 +158,64 @@ Date: August 31, 2022
 
 <!--- YOGURT: Yet AnOther User Repository Tool --->
 
-## Tools & Apps
-> .
+## Flatpak Permissions
+> [Flatpaks](https://flatpak.org/) are sandboxed applications, contaning all the needed dependacies inside their packaged environment, meaning that it is much harder for them to brake due to a faulty updates. That comes at the cost of not communicating out-of-the-box with the opertaing system and the rest of the apps. To overcome this problem, [Flatseal](https://flathub.org/apps/details/com.github.tchx84.Flatseal) works like a permissions manager GUI front-end.
 
+| No | Command                                                     | Information                              |
+|:--:|:-----------------------------------------------------------:|:----------------------------------------:|
+| 00 | https://flathub.org/apps/details/com.github.tchx84.Flatseal | A GUI tool to manage flatpak permissions |
+
+## Tools & Apps
+> Users can install / remove software either though the **Discover** (Store), or the command line.
+
+### Pacman
 | No | Command                             | Information                                                        |
 |:--:|:-----------------------------------:|:------------------------------------------------------------------:|
 | 01 | sudo pacman -S bash-completion      | A TUI tool to autocomplete commands by pressing the "TAB" keycap   |
+| 02 | sudo pacman -S bpytop               | A TUI tool to monitor system performance                           |
 | 03 | sudo pacman -S qbittorrent          | A GUI app to download / upload torrent files                       |
-| 04 | sudo yay -S bitwarden               | A GUI app to manage login credentials                              |
-| 05 | sudo yay -S megasync-bin            | A GUI app to synchronize a MEGA cloud drive with a local directory |
-| 06 | sudo yay -S annotator               | A GUI app to anotate images                                        |
-| 07 | sudo yay -S discord                 | A GUI app to join & chat with communities                          |
-| 08 | sudo yay -S spotify                 | A GUI app to listen to music                                       |
-| 09 | sudo yay -S chiaki                  | A GUI app to remote connect to a PS4 / PS5 console                 |
-| 10 | sudo pacman -Rsc firefox            | Remove Firefox w/ dependencies & clear pacman cache                |
+| 04 | sudo pacman -S papirus-icon-theme   | A GUI theme for the system icons                                   |
+
+| No | Command                             | Information                                                        |
+|:--:|:-----------------------------------:|:------------------------------------------------------------------:|
+| 00 | sudo pacman -Rsc firefox            | Remove Firefox w/ dependencies & clear pacman cache                |
+
+### Yay
+| No | Command                             | Information                                                        |
+|:--:|:-----------------------------------:|:------------------------------------------------------------------:|
+| 01 | sudo yay -S bitwarden               | A GUI app to manage login credentials                              |
+| 02 | sudo yay -S megasync-bin            | A GUI app to synchronize a MEGA cloud drive with a local directory |
+| 03 | sudo yay -S annotator               | A GUI app to anotate images                                        |
+| 04 | sudo yay -S discord                 | A GUI app to join & chat with communities                          |
+| 05 | sudo yay -S spotify                 | A GUI app to listen to music                                       |
+| 06 | sudo yay -S chiaki                  | A GUI app to remote connect to a PS4 / PS5 console                 |
+
+### Flatpak
+| No | Command                                             | Information                                                        |
+|:--:|:---------------------------------------------------:|:------------------------------------------------------------------:|
+| 01 | flatpak install flathub com.google.Chrome           | 
+| 02 | flatpak install flathub com.github.KRTirtho.Spotube | 
 
 <!--- GNU/Linux > Dolphin > Downloads > qBitTorrent > .temp --->
 
 ## Web-Apps
-> .
+> There are three more types of software, **Web-Apps**, **Flatpaks** and **AppImages**, **Scripts**. The first ones are web-pages converted into full-screen applications (see. YouTube, Twitch, etc.), while the other two are "distro agnostic" packages, meaning that they can run on both Arch-based, Debian-based and Fedora-based distributions.
 
-01. GNU/Linux > Discover (Store) > **Flatseal** (Install)
-02. GNU/Linux > Discover (Store) > **Chrome** (Install)
-03. GNU/Linux > Flatseal > Chrome > Filesystem > **/run/udev:ro** (ADD)
+02. Super > Flatseal > Chrome > Filesystem > **/run/udev:ro** (ADD)
 
 ### ProtonMail
-01. GNU/Linux > Chrome (Right Click) > **Add to Steam**
-02. GNU/Linux > Steam > Chrome (Right Click) > Properties > **ProtonMail**
+01. Super > Chrome (Right Click) > **Add to Steam**
+02. Super > Steam > Chrome (Right Click) > Properties > **ProtonMail**
 03. ... > Launch Options > --window-size=1024,640 --force-device-scale-factor=1.25 --device-scale-factor=1.25 --kiosk "https://proton.me/"
 
 ### SteamDB
-01. GNU/Linux > Chrome (Right Click) > **Add to Steam**
-02. GNU/Linux > Steam > Chrome (Right Click) > Properties > **SteamDB**
+01. Super > Chrome (Right Click) > **Add to Steam**
+02. Super > Steam > Chrome (Right Click) > Properties > **SteamDB**
 03. ... > Launch Options > --window-size=1024,640 --force-device-scale-factor=1.25 --device-scale-factor=1.25 --kiosk "https://steamdb.info/"
 
 ### ProtonDB
-01. GNU/Linux > Chrome (Right Click) > **Add to Steam**
-02. GNU/Linux > Steam > Chrome (Right Click) > Properties > **ProtonDB**
+01. Super > Chrome (Right Click) > **Add to Steam**
+02. Super > Steam > Chrome (Right Click) > Properties > **ProtonDB**
 03. ... > Launch Options > --window-size=1024,640 --force-device-scale-factor=1.25 --device-scale-factor=1.25 --kiosk "https://www.protondb.com/"
 
 ### YouTube
