@@ -3,7 +3,6 @@ Author: Argi Pent
 Date: August 31, 2022
 --->
 # Hitchhiker's Guide to the Steam Deck
-
 > [Steam Deck](https://www.steamdeck.com/en/) (released on February 25, 2022) is a handheld gaming computer developed by [Valve](https://www.valvesoftware.com/el/). It is powerd by an **x86-64 APU**, running [SteamOS](https://store.steampowered.com/steamos/download/?ver=steamdeck&snr=) — a [GNU/Linux Arch](https://archlinux.org/) based distribution on [KDE Plasma](https://kde.org/plasma-desktop/). It is designed to play both native and Windows OS emulated titles via the [Proton](https://github.com/ValveSoftware/Proton) compatibility layer.
 
 ## Table of Contents
@@ -65,7 +64,7 @@ Date: August 31, 2022
 | Face Buttons                 | A, B, X, Y                   |
 | View Button                  | VIEW                         |
 | Menu Button                  | MENU                         |
-| Left & Right Analog Sticks   | L3, R3 (w/ Capacitive Touch) |
+| Left & Right Analog Sticks   | L3, R3 (Capacitive Touch)    |
 | Left & Right Trackpads       | LT, RT                       |
 | Steam Button                 | STEAM                        |
 | Quick Access Button          | ACCESS                       |
@@ -80,7 +79,27 @@ Date: August 31, 2022
 ![tech specs 2](https://github.com/mrv-id/steamdeck/blob/main/tech-specs-2.png)
 ![tech specs 3](https://github.com/mrv-id/steamdeck/blob/main/tech-specs-3.png)
 
-<!--- ## CheatSheet
+## Shortcuts
+> .
+| No | Combination                  | Information                  |
+|:--:|:----------------------------:|:----------------------------:|
+| 01 | STEAM + B                    | Force the game to shutdown   |
+| 01 | STEAM + X                    | Show the on-screen keyboard  |
+| 01 | STEAM + L1                   | Toggle magnifier tool on/off |
+| 01 | STEAM + R1                   | Capture screenshot           |
+| 01 | STEAM + L2                   | Right mouse click            |
+| 01 | STEAM + R2                   | Left mouse click             |
+| 01 | STEAM + Right Joystick       | Joystick mouse               |
+| 01 | STEAM + Right Trackpad       | As mouse                     |
+| 01 | STEAM + Right Trackpad Click | Left mouse click             |
+| 01 | STEAM + Left Joystick Up     | Increase screen brightness   |
+| 01 | STEAM + Left Joystick Down   | Decrease screen brightness   |
+| 01 | STEAM + D-Pad Right          | Enter key                    |
+| 01 | STEAM + D-Pad Down           | Tab key                      |
+| 01 | STEAM + D-Pad Left           | Escape key                   |
+
+## CheatSheet
+> .
 | No | Command               | Information                                                  |
 |:--:|:---------------------:|:------------------------------------------------------------:|
 | 01 | sudo pacman -S        | Save (/install) software                                     |
@@ -93,19 +112,22 @@ Date: August 31, 2022
 | 08 | sudo pacman -Scc      | Completely clear pacman cache                                |
 | 09 | sudo pacman -Rsc      | (06) + (07)                                                  |
 | 10 | sudo chmod +x file.sh | Change mode (/permissions) of a script                       |
-| 11 | sudo ./file.sh        | Execute script                                               | --->
+| 11 | sudo ./file.sh        | Execute script                                               |
 
 ## Admin Password
+> .
 | No | Command                       | Information                 |
 |:--:|:-----------------------------:|:---------------------------:|
 | 00 | sudo passwd                   | Set password for super-user |
 
 ## SteamOS Policy
+> .
 | No | Command                       | Information                                 |
 |:--:|:-----------------------------:|:-------------------------------------------:|
 | 00 | sudo steamos-readonly disable | Disable operating system's read-only policy |
 
 ## Package Manager Keyring
+> .
 | No | Command                              | Information                                             |
 |:--:|:------------------------------------:|:-------------------------------------------------------:|
 | 01 | sudo pacman-key --init               | Initialize package manager's keyring process            |
@@ -113,6 +135,7 @@ Date: August 31, 2022
 | 03 | sudo pacman-key --refresh            | Refresh the keyring process                             |
 
 ## Arch User Repository
+> .
 | No | Command                                          | Information                                                                |
 |:--:|:------------------------------------------------:|:--------------------------------------------------------------------------:|
 | 01 | sudo pacman -Syu                                 | Synchronize (/compare) local software to remote repositories & update them |
@@ -126,6 +149,7 @@ Date: August 31, 2022
 <!--- YOGURT: Yet AnOther User Repository Tool --->
 
 ## Tools & Apps
+> .
 | No | Command                             | Information                                                        |
 |:--:|:-----------------------------------:|:------------------------------------------------------------------:|
 | 01 | sudo pacman -S bash-completion      | A TUI tool to autocomplete commands by pressing the "TAB" keycap   |
@@ -141,6 +165,7 @@ Date: August 31, 2022
 <!--- GNU/Linux > Dolphin > Downloads > qBitTorrent > .temp --->
 
 ## WebSite Shortcuts
+> .
 01. GNU/Linux > Discover (Store) > **Flatseal** (Install)
 02. GNU/Linux > Discover (Store) > **Chrome** (Install)
 03. GNU/Linux > Flatseal > Chrome > Filesystem > **/run/udev:ro** (ADD)
@@ -173,21 +198,37 @@ Date: August 31, 2022
 <!--- [Assets Dimensions](https://partner.steamgames.com/doc/store/assets/standard) --->
 
 ## Decky Loader
+> .
 01. Steam (Button) > Settings > System > **Enable Developer Mode** (Toggle)
 02. Steam (Button) > Settings > Developer > **CEF Remote Debugging** (Toggle)
 03. Steam (Button) > Power > **Switch to Desktop**
 04. GNU/Linux > **Konsole**:
 
-| Command                                                                                            | Information                                     |
-|:--------------------------------------------------------------------------------------------------:|:-----------------------------------------------:|
-| curl -L https://github.com/SteamDeckHomebrew/decky-loader/raw/main/dist/install_prerelease.sh | sh | Automated install script for the plugin manager |
+| Νο | Command                                                                                            | Information                                     |
+|:--:|:--------------------------------------------------------------------------------------------------:|:-----------------------------------------------:|
+| 00 | curl -L https://github.com/SteamDeckHomebrew/decky-loader/raw/main/dist/install_prerelease.sh | sh | Automated install script for the plugin manager |
 
 ## Replay Sorcery
-| Command                    | Information |
-|:--------------------------:|:-----------:|
-| sudo yay -S replay-sorcery | |
+> .
+| No | Command                                           | Information                                   |
+|:--:|:-------------------------------------------------:|:---------------------------------------------:|
+| 01 | sudo yay -S replay-sorcery                        | A TUI tool to screen capture while gaming     |
+| 02 | sudo systemctl --user enable --now replay-sorcery | Enable the background service through systemd |
+| 03 | sudo nano ~/.config/replay-sorcery.conf           | **SEE.**                                      |
+| 04 | sudo systemctl --user restart replay-sorcery      | Restart the background service                |
+
+**SEE.**
++ recordSeconds = 60
++ videoInput = hwaccel
++ videoWidth = 1280
++ videoHeight = 800
++ videoFramerate = 24
++ videoEncoder = hevc
+
++ Use "Ctrl+Super+R" as a combo command on Steam Input to capture video.
 
 ## CloudFlare Warp
+> .
 | Command                                      | Information |
 |:--------------------------------------------:|:-----------:|
 | sudo yay -S cloudflare-warp-bin              | |
@@ -199,6 +240,7 @@ Date: August 31, 2022
 | warp-cli set mode warp+doh                   | |
 
 ## Neofetch
+> .
 | Command            | Information   |
 |:------------------:|:-------------:|
 | pacman -S neofetch | |
@@ -206,6 +248,7 @@ Date: August 31, 2022
 | source ~/.bashrc   | |
 
 ## Non-Steam Games
+> .
 | Command                        | Information   |
 |:------------------------------:|:-------------:|
 | sudo yay -S steamtinkerlaunch  | |
@@ -217,6 +260,7 @@ Date: August 31, 2022
 > STEAM_COMPAT_MOUNTS=/run/media/mmcblk0p1 %command%
 
 ## Emulated Games
+> .
 + Steam (Button) > Settings > System: Format SD Card
 + [EMUDECK](https://www.emudeck.com/EmuDeck.desktop)
 + [Steam ROM Manager](https://github.com/SteamGridDB/steam-rom-manager/releases/tag/v2.3.40)
@@ -224,9 +268,11 @@ Date: August 31, 2022
 + [GameHub](https://github.com/tkashkin/GameHub)
 
 ## Kodi
+> .
 | Command             | Information   |
 |:-------------------:|:-------------:|
 | sudo pacman -S kodi | |
 
 ## Windows 11
+> .
 + https://github.com/media-a-server/Steam-Deck-Driver-Guide
