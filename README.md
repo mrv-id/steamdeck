@@ -2,8 +2,9 @@
 Author: Argi Pent
 Date: August 31, 2022
 --->
+
 # Hitchhiker's Guide to the Steam Deck
-> [Steam Deck](https://www.steamdeck.com/en/) (released on February 25, 2022) is a handheld gaming computer developed by [Valve](https://www.valvesoftware.com/el/). It is powerd by an **x86-64 APU**, running [SteamOS](https://store.steampowered.com/steamos/download/?ver=steamdeck&snr=) — a [GNU/Linux Arch](https://archlinux.org/) based distribution on [KDE Plasma](https://kde.org/plasma-desktop/). It is designed to play both native and Windows OS emulated titles via the [Proton](https://github.com/ValveSoftware/Proton) compatibility layer.
+> [Steam Deck](https://www.steamdeck.com/en/) (released on February 25, 2022) is a handheld gaming computer developed by [Valve](https://www.valvesoftware.com/el/). It is powerd by an **x86-64 APU**, running [SteamOS](https://store.steampowered.com/steamos/download/?ver=steamdeck&snr=) — a [GNU/Linux Arch](https://archlinux.org/) based distribution on a [KDE Plasma](https://kde.org/plasma-desktop/) environment. It is designed to play both native and Windows OS emulated titles via the [Proton](https://github.com/ValveSoftware/Proton) compatibility layer.
 
 ## Table of Contents
 
@@ -79,7 +80,7 @@ Date: August 31, 2022
 ![tech specs 2](https://github.com/mrv-id/steamdeck/blob/main/tech-specs-2.png)
 ![tech specs 3](https://github.com/mrv-id/steamdeck/blob/main/tech-specs-3.png)
 
-## Shortcuts
+## Steam Shortcuts
 > The official **Steam Input** button shortcuts.
 
 | No | Combination                  | Information                  |
@@ -99,8 +100,8 @@ Date: August 31, 2022
 | 01 | STEAM + D-Pad Down           | Tab key                      |
 | 01 | STEAM + D-Pad Left           | Escape key                   |
 
-## CheatSheet
-> The unofficial **GNU/Linux Arch-based distribution** terminal cheatsheet. Any command that alters the system — even in the merest way — needs root access. The [sudo](https://man7.org/linux/man-pages/man8/sudo.8.html) prefix allows a permitted user to execute a command as the super user.
+## Terminal CheatSheet
+> The unofficial **GNU/Linux Arch-based distribution** terminal cheatsheet.
 
 01. STEAM > Power > **Switch to Desktop**
 02. GNU/Linux > **Konsole**
@@ -120,21 +121,21 @@ Date: August 31, 2022
 | 11 | sudo ./file.sh        | Execute script                                               |
 
 ## Super User Password
-> The use of the sudo command needs for the administrator to have a safety password set.
+> Any command that alters the system — even in the merest way — needs root access. The [sudo](https://man7.org/linux/man-pages/man8/sudo.8.html) prefix allows a permitted user to execute a command as the super-user. For the **Super User DO** command to work one needs for the administrator to set a password first.
 
 | No | Command                       | Information                 |
 |:--:|:-----------------------------:|:---------------------------:|
 | 00 | sudo passwd                   | Set password for super-user |
 
-## SteamOS Policy
-> Valve ships SteamOS locked, so that non-linux users don't mess around with system files — and for bug reporting and reproduction to be consistent. But, it encourages tech-savvy users to disable the read-only policy.
+## Operatin System Policy
+> Valve ships SteamOS locked so that reporting and reproduction of bugs to be consistent. But, it encourages tech-savvy users to disable the read-only policy and use the Arch-based GNU/Linux distribution behind the gaming-mode at it's full potential.
 
 | No | Command                       | Information                                 |
 |:--:|:-----------------------------:|:-------------------------------------------:|
 | 00 | sudo steamos-readonly disable | Disable operating system's read-only policy |
 
-## Package Manager Keyring
-> .
+## Package Manager
+> Now that the filesystem is free from the read-only policy, the **PACkage MANager**, which is responsible for installing, syncing, updating, and removing every bit of software on the distribution must be initialized. The following [pacman](https://archlinux.org/pacman/pacman.8.html) commands will make use the appropirate keyrings to ensure a safe transaction between the locally installed software and the ones saved on the Arch repository servers.
 
 | No | Command                              | Information                                             |
 |:--:|:------------------------------------:|:-------------------------------------------------------:|
@@ -143,7 +144,7 @@ Date: August 31, 2022
 | 03 | sudo pacman-key --refresh            | Refresh the keyring process                             |
 
 ## Arch User Repository
-> .
+> Except for the official repository, there is also a user-maintained repo, containing packaging instructions for every piece of software that has not yet made it into the main channel. To install applications from the [AUR](https://aur.archlinux.org/) users must build them from scratch — a time consuming process. Thus, the use of a special package manager is mandatory, enter [yay](https://github.com/Jguer/yay).
 
 | No | Command                                          | Information                                                                |
 |:--:|:------------------------------------------------:|:--------------------------------------------------------------------------:|
