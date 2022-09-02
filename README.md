@@ -338,14 +338,47 @@ YOGURT: Yet AnOther User Repository Tool
 01. Super > Chrome > [Download](https://www.emudeck.com/EmuDeck.desktop) (Save to: Desktop)
 02. **EmuDeck.desktop** (Double Click)
 03. ... > [Steam ROM Manager](https://github.com/SteamGridDB/steam-rom-manager/releases/tag/v2.3.40)
-04. **Steam-ROM-Manager.AppImage** (Double Click)
+04. (Close Steam)
+05. **Steam-ROM-Manager.AppImage** (Double Click)
+06. Preview > Generate App list > **Save App list**
+07. **Return to Gaming Mode**
 
 ## Kodi
-> .
+> [Kodi](https://kodi.tv/), ex. XBMC (abbr. XBox Media Center) is the ultimate media player.
 
-| Command             | Information   |
-|:-------------------:|:-------------:|
-| sudo pacman -S kodi | |
+| No | Command             | Information                          |
+|:--:|:-------------------:|:------------------------------------:|
+| 00 | sudo pacman -S kodi | A GUI tool for everyting multi-media |
+
+01. Super > **Kodi**
+02. Settings > System > Add-ons > **Unknown Sources** (Toggle)
+
+### [Arctic Horizon 2](https://forum.kodi.tv/showthread.php?tid=367352)
+01. [Download](https://github.com/jurialmunkey/repository.jurialmunkey/raw/master/repository.jurialmunkey-2.2.zip)
+02. [TheMovieDB](https://github.com/jurialmunkey/plugin.video.themoviedb.helper/archive/refs/tags/v4.11.5.zip)
+03. [TextureMaker](https://github.com/jurialmunkey/script.texturemaker/archive/refs/tags/v0.2.7.zip)
+04. [SkinVariables](https://github.com/jurialmunkey/script.skinvariables/archive/refs/tags/v1.0.7.zip)
+05. Settings > Add-ons > Install from zip file > Home folder > **v4.11.5.zip**
+06. ... > **v0.2.7.zip**
+07. ... > **v1.0.7.zip**
+08. ... > **repository.jurialmunkey-2.2.zip**
+09. *(optional)* Skin Settings > Manage Dependencies > plugin.video.themoviedb.helper > API Keys > 12d24754
+
+<!---
+https://www.omdbapi.com/
+--->
+
+### FEN
+01. Settings > File manager > Add source > **https://tikipeter.github.io/**
+02. Settings > Add-ons > Install from zip file > tiki > **repository.tikipeter-1.0.0.zip**
+03. Settings > Add-ons > Install from repository > Tikipeter's Repository > Video add-ons > **Fen** (Install)
+04. Fen > Settings > Settings: Fen > Provider Accounts > **Real Debrid** (Authorize)
+05. ... > Meta Accounts > **Trakt** (Authorize)
+
+<!--- 
+https://real-debrid.com/device
+https://trakt.tv/activate 
+--->
 
 ## Color Calibration
 > .
