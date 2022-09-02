@@ -88,19 +88,19 @@ Date: August 31, 2022
 | No | Combination                  | Information                  |
 |:--:|:----------------------------:|:----------------------------:|
 | 01 | STEAM + B                    | Force the game to shutdown   |
-| 01 | STEAM + X                    | Show the on-screen keyboard  |
-| 01 | STEAM + L1                   | Toggle magnifier tool on/off |
-| 01 | STEAM + R1                   | Capture screenshot           |
-| 01 | STEAM + L2                   | Right mouse click            |
-| 01 | STEAM + R2                   | Left mouse click             |
-| 01 | STEAM + Right Joystick       | Joystick mouse               |
-| 01 | STEAM + Right Trackpad       | As mouse                     |
-| 01 | STEAM + Right Trackpad Click | Left mouse click             |
-| 01 | STEAM + Left Joystick Up     | Increase screen brightness   |
-| 01 | STEAM + Left Joystick Down   | Decrease screen brightness   |
-| 01 | STEAM + D-Pad Right          | Enter key                    |
-| 01 | STEAM + D-Pad Down           | Tab key                      |
-| 01 | STEAM + D-Pad Left           | Escape key                   |
+| 02 | STEAM + X                    | Show the on-screen keyboard  |
+| 03 | STEAM + L1                   | Toggle magnifier tool on/off |
+| 04 | STEAM + R1                   | Capture screenshot           |
+| 05 | STEAM + L2                   | Right mouse click            |
+| 06 | STEAM + R2                   | Left mouse click             |
+| 07 | STEAM + Right Joystick       | Joystick mouse               |
+| 08 | STEAM + Right Trackpad       | As mouse                     |
+| 09 | STEAM + Right Trackpad Click | Left mouse click             |
+| 10 | STEAM + Left Joystick Up     | Increase screen brightness   |
+| 11 | STEAM + Left Joystick Down   | Decrease screen brightness   |
+| 12 | STEAM + D-Pad Right          | Enter key                    |
+| 13 | STEAM + D-Pad Down           | Tab key                      |
+| 14 | STEAM + D-Pad Left           | Escape key                   |
 
 ## Terminal CheatSheet
 > The unofficial **GNU/Linux Arch-based distribution** terminal cheatsheet.
@@ -163,7 +163,7 @@ YOGURT: Yet AnOther User Repository Tool
 --->
 
 ## Flatpak Permissions
-> [Flatpaks](https://flatpak.org/) are sandboxed, disto agnostic applications, contaning all the needed dependacies inside their packaged environment, meaning that it is much harder for them to brake due to a faulty updates. That comes at the cost of not communicating out-of-the-box with the opertaing system and the rest of the apps. To overcome this problem, [Flatseal](https://flathub.org/apps/details/com.github.tchx84.Flatseal) works like a GUI front-end permissions manager.
+> [Flatpaks](https://flatpak.org/) are sandboxed, disto agnostic applications, contaning all the needed dependacies inside their packaged environment, meaning that it is much harder for them to brake due to a faulty update. That comes at the cost of limited communication out-of-the-box with the opertaing system. [Flatseal](https://flathub.org/apps/details/com.github.tchx84.Flatseal) works like a GUI front-end permissions manager to overcome this problem.
 
 | No | Command                                                     | Information                              |
 |:--:|:-----------------------------------------------------------:|:----------------------------------------:|
@@ -192,12 +192,12 @@ YOGURT: Yet AnOther User Repository Tool
 | 06 | yay -S chiaki       | A GUI app to remote connect to a PS4 / PS5 console                 |
 
 ### Flatpak
-| No | Command                                                                       | Information                                   |
-|:--:|:-----------------------------------------------------------------------------:|:---------------------------------------------:|
-| 01 | flatpak install flathub com.google.Chrome                                     | A GUI app to browse the internet              |
-| 02 | flatpak --user override --filesystem=/run/udev:ro com.google.Chrome           | Access the device events management subsystem |
-| 03 | flatpak install flathub com.microsoft.Edge                                    | A GUI app to browse the internet              |
-| 04 | flatpak --user override --filesystem=/run/udev:ro com.microsoft.Edge          | Access the device events management subsystem |
+| No | Command                                                              | Information                                   |
+|:--:|:--------------------------------------------------------------------:|:---------------------------------------------:|
+| 01 | flatpak install flathub com.google.Chrome                            | A GUI app to browse the internet              |
+| 02 | flatpak --user override --filesystem=/run/udev:ro com.google.Chrome  | Access the device events management subsystem |
+| 03 | flatpak install flathub com.microsoft.Edge                           | A GUI app to browse the internet              |
+| 04 | flatpak --user override --filesystem=/run/udev:ro com.microsoft.Edge | Access the device events management subsystem |
 
 <!--- 
 + Super > Flatseal > Chrome > Filesystem > **/run/udev:ro** (ADD)
@@ -205,7 +205,7 @@ YOGURT: Yet AnOther User Repository Tool
 --->
 
 ## Web-Apps
-> **Web-Apps** are web-pages converted into full-screen applications that can then be accessed through the Steam UI.
+> **Web-Apps** are webpages converted into full-screen applications that can then be accessed through the Steam UI.
 
 ### ProtonMail
 01. Super > Chrome (Right Click) > **Add to Steam**
@@ -312,7 +312,7 @@ YOGURT: Yet AnOther User Repository Tool
 00. Add **neofetch** to the last line of the document
 
 ## Non-Steam Games
-> The following steps and commands will enable the installation of games from third party store / launchers ([Epic Games](https://store.epicgames.com/en-US/) & [GOG](https://www.gog.com/)), either to the internal SSD or the microSD card.
+> The following steps and commands will enable the installation of games from third party stores / launchers ([Epic Games](https://store.epicgames.com/en-US/) & [GOG](https://www.gog.com/)), either to the internal SSD or the microSD card.
 
 01. **Return to Gaming Mode**
 02. STEAM > Settings > System: **Format SD Card**
@@ -330,13 +330,15 @@ YOGURT: Yet AnOther User Repository Tool
 | 07 | flatpak --user override --filesystem=/run/udev:ro io.github.philipk.boilr     | Access the device events management subsystem                                   |
 
 01. Super > HeroicGamesLauncher (Right Click) > **Add to Steam**
-02. Super > Steam > Edge (Right Click) > Properties > Launch Options > **STEAM_COMPAT_MOUNTS=/run/media/mmcblk0p1 %command%**
+02. Super > Steam > HeroicGamesLauncher (Right Click) > Properties > Launch Options > **STEAM_COMPAT_MOUNTS=/run/media/mmcblk0p1 %command%**
 
 ## Emulated Games
-> 
+> [EMUDECK](https://www.emudeck.com/) is an automated installtion script that sets up every available emulator for the Steam Deck. It integrades to the Steam Library, it respects the 16:10 aspect ratio and makes use of Steam Input per game.
 
-+ [EMUDECK](https://www.emudeck.com/EmuDeck.desktop)
-+ [Steam ROM Manager](https://github.com/SteamGridDB/steam-rom-manager/releases/tag/v2.3.40)
+01. Super > Chrome > [Download](https://www.emudeck.com/EmuDeck.desktop) (Save to: Desktop)
+02. **EmuDeck.desktop** (Double Click)
+03. ... > [Steam ROM Manager](https://github.com/SteamGridDB/steam-rom-manager/releases/tag/v2.3.40)
+04. **Steam-ROM-Manager.AppImage** (Double Click)
 
 ## Kodi
 > .
