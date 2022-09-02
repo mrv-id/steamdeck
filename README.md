@@ -179,7 +179,7 @@ YOGURT: Yet AnOther User Repository Tool
 | 02 | sudo pacman -S bpytop             | A TUI tool to monitor system performance                         |
 | 03 | sudo pacman -S qbittorrent        | A GUI app to download / upload torrent files                     |
 | 04 | sudo pacman -S papirus-icon-theme | A GUI theme for the system icons                                 |
-| 00 | sudo pacman -Rsc firefox          | Remove Firefox w/ dependencies & clear pacman cache              |
+| 05 | sudo pacman -Rsc firefox          | Remove Firefox w/ dependencies & clear pacman cache              |
 
 ### Yay
 | No | Command             | Information                                                        |
