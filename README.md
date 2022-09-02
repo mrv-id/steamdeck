@@ -244,6 +244,62 @@ YOGURT: Yet AnOther User Repository Tool
 06. ... > Launch Options > --window-size=1024,640 --force-device-scale-factor=1.25 --device-scale-factor=1.25 --kiosk "https://play.geforcenow.com/"
 --->
 
+## Color Calibration
+> .
+
+| No | Command                   | Information                                       |
+|:--:|:-------------------------:|:-------------------------------------------------:|
+| 01 | sudo pacman -S displaycal | A GUI tool used for color calibration             |
+| 02 | sudo pacman -S argyllcms  | A TUI tool containing drivers for colormeteres    |
+
+01. [ArgyllCMS Binaries](https://www.argyllcms.com/downloadlinux.html)
+02. Super > **DisplayCal**
+03. File > **Locate ArgyllCMS executables...**
+04. Settings > **Video 3D LUT for ReShade (D65, Rec. 709 / Rec. 1886)**
+05. Display & instrument > **SpyrerX**
+06. ... > Correction > **Spectral: LCD White LED family (AC, LG, Samsung)**
+07. 3D LUT > **Create 3D LUT after profiling** (Checkbox)
+08. ... > Source colorspace > **Rec709 ITU-R BT.709**
+09. ... > Tone curve > **Rec. 1886**
+10. ... > Rendering intent > **Absolut colorimetric with white point scaling**
+11. ... > 3D LUT file format > **ReShade (.png, .fx)**
+12. ... > Input encoding > **Full range RGB 0-255**
+13. ... > Output encoding > **Full range RGB 0-255**
+14. ... > 3D LUT resolution > **64x64x64**
+15. ... > **Calibrate & profile**
+
+*(optional)* If there was an error during the calibration process:
+01. Super > **Create 3D LUT**
+02. Source profile > **Rec709 ITU-R BT.709**
+03. Tone curve > **Rec. 1886** / Gamma: **2.4** / **Absolute** / Black output offset: **0%**
+04. Destination profile > **AVX7530 U...** / **Apply calibration (vcgt)** (Checkbox)
+05. Gamut mapping mode > **Inverse device-to-PCS**
+06. Rendering intent > **Absolut colorimetric with white point scaling**
+07. 3D LUT file format > **IRIDAS (.cube)**
+08. Input encoding > **Full range RGB 0-255**
+09. Output encoding > **Full range RGB 0-255**
+10. 3D LUT resolution > **64x64x64**
+11. **Create 3D LUT...**
+12. **SteamDeck.cube**
+
+<!---
+/home/$USER/Donwloads/Argyll_V2.3.0/ref/Rec709.icm
+--->
+
+*(optional)* For Kodi:
+01. Super > **Create 3D LUT**
+02. Source profile > **Rec709 ITU-R BT.709**
+03. Tone curve > **Rec. 1886** / Gamma: **2.4** / **Absolute** / Black output offset: **0%**
+04. Destination profile > **AVX7530 U...** / **Apply calibration (vcgt)** (Checkbox)
+05. Gamut mapping mode > **Inverse device-to-PCS**
+06. Rendering intent > **Absolut colorimetric with white point scaling**
+07. 3D LUT file format > **madVR (.3dlut)**
+08. Input encoding > **TV RGB 16-235**
+09. Output encoding > ***TV RGB 16-235**
+10. 3D LUT resolution > **64x64x64**
+11. **Create 3D LUT...**
+12. **SteamDeck.3dlut**
+
 ## Decky Loader
 > [Decky Loader](https://deckbrew.xyz/) is a plugin manager for Steam Deck. Those mods offer means to overclock, control the build-in fun, change CSS themes, and more. Users can install plugins by either downloading (and extracting) them to "/home/homebrew/plugins" of though the [Plugins Store](https://beta.deckbrew.xyz/).
 
@@ -328,9 +384,13 @@ YOGURT: Yet AnOther User Repository Tool
 | 05 | sudo chown deck:deck -R /run/media/mmcblk0p1/                                 | Change ownership of the microSD card to the default deck user                   |
 | 06 | flatpak install flathub io.github.philipk.boilr                               | A GUI tool to import non-steam games to the Steam library                       |
 | 07 | flatpak --user override --filesystem=/run/udev:ro io.github.philipk.boilr     | Access the device events management subsystem                                   |
+| 08 | yay -S steamtinkerlaunch                                                      | A GUI tool used to configure native Linux & Proton games                        |
 
 01. Super > HeroicGamesLauncher (Right Click) > **Add to Steam**
-02. Super > Steam > HeroicGamesLauncher (Right Click) > Properties > Launch Options > **STEAM_COMPAT_MOUNTS=/run/media/mmcblk0p1 %command%**
+02. Super > Steam > HeroicGamesLauncher (Right Click) > Properties > Launch Options > **STEAM_COMPAT_MOUNTS=/run/media/mmcblk0p1 %command%** (ADD)
+03. Super > Steam > nativeTitle (Right Lick) > Properties > Launch Options > **steamtinkerlaunch %command%** (ADD)
+04. Super > Steam > protonTitle (Right Lick) > Properties > **Force the use of a specific Steam Play compatibility too** (Checkbox)
+05. ... > **steamtinkerlaunch**
 
 ## Emulated Games
 > [EMUDECK](https://www.emudeck.com/) is an automated installtion script that sets up every available emulator for the Steam Deck. It integrades to the Steam Library, it respects the 16:10 aspect ratio and makes use of Steam Input per game.
@@ -350,8 +410,11 @@ YOGURT: Yet AnOther User Repository Tool
 |:--:|:-------------------:|:------------------------------------:|
 | 00 | sudo pacman -S kodi | A GUI tool for everyting multi-media |
 
-01. Super > **Kodi**
-02. Settings > System > Add-ons > **Unknown Sources** (Toggle)
+01. Super > Kodi (Right Click) > **Add to Steam**
+02. Super > **Kodi**
+03. Settings > Display > Colour management mode > **3DLUT**
+04. ... > 3DLUT file > /home/deck/Documents/.calibration/SteamDeck.3dlut
+05. Settings > System > Add-ons > **Unknown Sources** (Toggle)
 
 ### [Arctic Horizon 2](https://forum.kodi.tv/showthread.php?tid=367352)
 01. [Download](https://github.com/jurialmunkey/repository.jurialmunkey/raw/master/repository.jurialmunkey-2.2.zip)
@@ -376,21 +439,9 @@ https://www.omdbapi.com/
 05. ... > Meta Accounts > **Trakt** (Authorize)
 
 <!--- 
-https://real-debrid.com/device
-https://trakt.tv/activate 
+https://real-debrid.com/d
+https://trakt.tv/ 
 --->
-
-## Color Calibration
-> .
-
-| No | Command                   | Information                                       |
-|:--:|:-------------------------:|:-------------------------------------------------:|
-| 01 | sudo pacman -S displaycal | A GUI tool used for color calibration             |
-| 02 | sudo pacman -S argyllcms  | A TUI tool containing drivers for colormeteres    |
-| 03 | yay -S steamtinkerlaunch  | A GUI tool used to configure Linux & Proton games |
-
-01. [ArgyllCMS Binaries](https://www.argyllcms.com/downloadlinux.html)
-02. Super > **DisplayCal**
 
 ## Microsoft Windows
 > .
