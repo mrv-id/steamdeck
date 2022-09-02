@@ -60,22 +60,22 @@ Date: August 31, 2022
 | Size       | 298mm x 117mm x 49mm |
 | Weight     | 669grams             |
 
-| Controls                     | Information                  |
-|:----------------------------:|:----------------------------:|
-| Directional Pad              | Up, Right, Down, Left        |
-| Face Buttons                 | A, B, X, Y                   |
-| View Button                  | VIEW                         |
-| Menu Button                  | MENU                         |
-| Left & Right Analog Sticks   | L3, R3 (Capacitive Touch)    |
-| Left & Right Trackpads       | LT, RT                       |
-| Steam Button                 | STEAM                        |
-| Quick Access Button          | ACCESS                       |
-| Left & Right Analog Triggers | L1, R1                       |
-| Left & Right Bumpers         | L2, R2                       |
-| Left & Right Upper Buttons   | L4, R4                       |
-| Left & Right Lower Buttons   | L5, R5                       |
-| Haptics                      | Yes                          |
-| Gyro                         | 6-Axix (IMU)                 |
+| Controls                     | Information               |
+|:----------------------------:|:-------------------------:|
+| Directional Pad              | Up, Right, Down, Left     |
+| Face Buttons                 | A, B, X, Y                |
+| View Button                  | VIEW                      |
+| Menu Button                  | MENU                      |
+| Left & Right Analog Sticks   | L3, R3 (Capacitive Touch) |
+| Left & Right Trackpads       | LT, RT                    |
+| Steam Button                 | STEAM                     |
+| Quick Access Button          | . . .                     |
+| Left & Right Analog Triggers | L1, R1                    |
+| Left & Right Bumpers         | L2, R2                    |
+| Left & Right Upper Buttons   | L4, R4                    |
+| Left & Right Lower Buttons   | L5, R5                    |
+| Haptics                      | Yes                       |
+| Gyro                         | 6-Axix (IMU)              |
 --->
 
 ![tech specs 1](https://github.com/mrv-id/steamdeck/blob/main/tech-specs-1.png)
@@ -123,13 +123,13 @@ Date: August 31, 2022
 | 11 | sudo ./file.sh        | Execute script                                               |
 
 ## Root User Password
-> Any command that alters the system — even in the merest way — needs root access. The [sudo](https://man7.org/linux/man-pages/man8/sudo.8.html) prefix allows a permitted user to execute a command as the super-user. For the **Super User DO** command to work though one needs for the administrator to set a password first.
+> Any command that alters the system -- even in the merest way -- needs root access. The [sudo](https://man7.org/linux/man-pages/man8/sudo.8.html) prefix allows a permitted user to execute a command as the super-user. For the **Super User DO** command to work though one needs for the administrator to set a password first.
 
-| No | Command                       | Information                 |
-|:--:|:-----------------------------:|:---------------------------:|
-| 00 | sudo passwd                   | Set password for root user  |
+| No | Command     | Information                |
+|:--:|:-----------:|:--------------------------:|
+| 00 | sudo passwd | Set password for root user |
 
-## Ready Only Policy
+## Read Only Policy
 > Valve ships SteamOS locked so that reporting and reproduction of bugs to be consistent. But, it encourages tech-savvy users to disable the read-only policy and use the operating system behind the steam UI at it's full potential.
 
 | No | Command                       | Information                                 |
@@ -146,7 +146,7 @@ Date: August 31, 2022
 | 03 | sudo pacman-key --refresh            | Refresh the keyring process                             |
 
 ## Arch User Repository
-> There is also a user-maintained repository, containing packaging instructions for every piece of software that has not yet made it into the official repo. To install applications from the [AUR](https://aur.archlinux.org/) users must build them from scratch — a time consuming process. Thus, the use of a special package manager is mandatory, enter [yay](https://github.com/Jguer/yay).
+> There is also a user-maintained repository, containing packaging instructions for every piece of software that has not yet made it into the official repo. To install applications from the [AUR](https://aur.archlinux.org/) users must build them from scratch -- a time consuming process. Thus, the use of a special package manager is mandatory, enter [yay](https://github.com/Jguer/yay).
 
 | No | Command                                          | Information                                                                |
 |:--:|:------------------------------------------------:|:--------------------------------------------------------------------------:|
@@ -173,50 +173,35 @@ YOGURT: Yet AnOther User Repository Tool
 > Users can install / remove software either though **Discover** (Software Center), or the command line.
 
 ### Pacman
-
-#### Install
-| No | Command                             | Information                                                        |
-|:--:|:-----------------------------------:|:------------------------------------------------------------------:|
-| 01 | sudo pacman -S bash-completion      | A TUI tool to autocomplete commands by pressing the "TAB" keycap   |
-| 02 | sudo pacman -S bpytop               | A TUI tool to monitor system performance                           |
-| 03 | sudo pacman -S qbittorrent          | A GUI app to download / upload torrent files                       |
-| 04 | sudo pacman -S papirus-icon-theme   | A GUI theme for the system icons                                   |
-
-#### Remove
-| No | Command                             | Information                                                        |
-|:--:|:-----------------------------------:|:------------------------------------------------------------------:|
-| 00 | sudo pacman -Rsc firefox            | Remove Firefox w/ dependencies & clear pacman cache                |
+| No | Command                           | Information                                                      |
+|:--:|:---------------------------------:|:----------------------------------------------------------------:|
+| 01 | sudo pacman -S bash-completion    | A TUI tool to autocomplete commands by pressing the "TAB" keycap |
+| 02 | sudo pacman -S bpytop             | A TUI tool to monitor system performance                         |
+| 03 | sudo pacman -S qbittorrent        | A GUI app to download / upload torrent files                     |
+| 04 | sudo pacman -S papirus-icon-theme | A GUI theme for the system icons                                 |
+| 00 | sudo pacman -Rsc firefox          | Remove Firefox w/ dependencies & clear pacman cache              |
 
 ### Yay
-| No | Command                             | Information                                                        |
-|:--:|:-----------------------------------:|:------------------------------------------------------------------:|
-| 01 | sudo yay -S bitwarden               | A GUI app to manage login credentials                              |
-| 02 | sudo yay -S megasync-bin            | A GUI app to synchronize a MEGA cloud drive with a local directory |
-| 03 | sudo yay -S annotator               | A GUI app to anotate images                                        |
-| 04 | sudo yay -S discord                 | A GUI app to join & chat with communities                          |
-| 05 | sudo yay -S spotify                 | A GUI app to listen to music                                       |
-| 06 | sudo yay -S chiaki                  | A GUI app to remote connect to a PS4 / PS5 console                 |
+| No | Command             | Information                                                        |
+|:--:|:-------------------:|:------------------------------------------------------------------:|
+| 01 | yay -S bitwarden    | A GUI app to manage login credentials                              |
+| 02 | yay -S megasync-bin | A GUI app to synchronize a MEGA cloud drive with a local directory |
+| 03 | yay -S annotator    | A GUI app to anotate images                                        |
+| 04 | yay -S discord      | A GUI app to join & chat with communities                          |
+| 05 | yay -S spotify      | A GUI app to listen to music                                       |
+| 06 | yay -S chiaki       | A GUI app to remote connect to a PS4 / PS5 console                 |
 
 ### Flatpak
-
-#### Install
-| No | Command                                             | Information                                              |
-|:--:|:---------------------------------------------------:|:--------------------------------------------------------:|
-| 01 | flatpak install flathub com.google.Chrome           | A GUI app to browse the internet                         |
-| 02 | flatpak install flathub com.microsoft.Edge          | A GUI app to browse the internet                         |
-| 03 | flatpak install flathub com.github.KRTirtho.Spotube | A GUI app to listen to Spofity & YouTube music w/out ads |
-
-#### Permissionss
 | No | Command                                                                       | Information                                   |
 |:--:|:-----------------------------------------------------------------------------:|:---------------------------------------------:|
-| 01 | flatpak --user override --filesystem=/run/udev:ro com.google.Chrome           | Access the device events management subsystem |
-| 01 | flatpak --user override --filesystem=/run/udev:ro com.microsoft.Edge          | Access the device events management subsystem |
-| 01 | flatpak --user override --filesystem=/run/udev:ro com.github.KRTirtho.Spotube | Access the device events management subsystem |
+| 01 | flatpak install flathub com.google.Chrome                                     | A GUI app to browse the internet              |
+| 02 | flatpak --user override --filesystem=/run/udev:ro com.google.Chrome           | Access the device events management subsystem |
+| 03 | flatpak install flathub com.microsoft.Edge                                    | A GUI app to browse the internet              |
+| 04 | flatpak --user override --filesystem=/run/udev:ro com.microsoft.Edge          | Access the device events management subsystem |
 
 <!--- 
 + Super > Flatseal > Chrome > Filesystem > **/run/udev:ro** (ADD)
 + Super > Flatseal > Edge > Filesystem > **/run/udev:ro** (ADD)
-+ Super > Flatseal > Spottube > Filesystem > **/run/udev:ro** (ADD)
 --->
 
 ## Web-Apps
@@ -260,79 +245,98 @@ YOGURT: Yet AnOther User Repository Tool
 --->
 
 ## Decky Loader
-> .
+> [Decky Loader](https://deckbrew.xyz/) is a plugin manager for Steam Deck. Those mods offer means to overclock, control the build-in fun, change CSS themes, and more. Users can install plugins by either downloading (and extracting) them to "/home/homebrew/plugins" of though the [Plugins Store](https://beta.deckbrew.xyz/).
 
-01. Steam (Button) > Settings > System > **Enable Developer Mode** (Toggle)
-02. Steam (Button) > Settings > Developer > **CEF Remote Debugging** (Toggle)
-03. Steam (Button) > Power > **Switch to Desktop**
-04. Super > **Konsole**:
+01. **Return to Gaming Mode**
+02. STEAM > Settings > System > **Enable Developer Mode** (Toggle)
+03. STEAM > Settings > Developer > **CEF Remote Debugging** (Toggle)
+04. STEAM > Power > **Switch to Desktop**
+05. *(optional)* Super > Chrome > [Plugins Store](https://plugins.deckbrew.xyz/)(OLD)
+06. Super > **Konsole**:
 
-| Νο | Command                                                                                            | Information                                     |
-|:--:|:--------------------------------------------------------------------------------------------------:|:-----------------------------------------------:|
-| 00 | curl -L https://github.com/SteamDeckHomebrew/decky-loader/raw/main/dist/install_prerelease.sh | sh | Automated install script for the plugin manager |
+| No | Command                                                                                            | Information                  |
+|:--:|:--------------------------------------------------------------------------------------------------:|:----------------------------:|
+| 00 | curl -L https://github.com/SteamDeckHomebrew/decky-loader/raw/main/dist/install_prerelease.sh | sh | A GUI tool to manage plagins |
+
+01. **Return to Gaming Mode**
+02. . . . > Plugins > **Plugins Store**
+03. PowerTools
+04. *(optional)* Fantastic
+05. *(optional)* MangoHUD
+06. *(optional)* [CSSLoader](https://github.com/EMERALD0874/Steam-Deck-Themes)
+07. *(optional)* AutoNightMode
 
 ## Replay Sorcery
-> .
+> [Replay Sorcery](https://github.com/matanui159/ReplaySorcery) is a command-line screen capture utility that by default saves the last thirty seconds of gameplay. Users can invoke it by pressing **Ctrl+Super+R**.
 
 | No | Command                                           | Information                                   |
 |:--:|:-------------------------------------------------:|:---------------------------------------------:|
-| 01 | sudo yay -S replay-sorcery                        | A TUI tool to screen capture while gaming     |
+| 01 | yay -S replay-sorcery                             | A TUI tool to screen capture while gaming     |
 | 02 | sudo systemctl --user enable --now replay-sorcery | Enable the background service through systemd |
 | 03 | sudo nano ~/.config/replay-sorcery.conf           | **SEE.**                                      |
 | 04 | sudo systemctl --user restart replay-sorcery      | Restart the background service                |
-| 05 | Ctrl+Super+R                                      | Screen capture the last seconds of gameplay   |
 
 **SEE.**
-+ recordSeconds = 60
-+ videoInput = hwaccel
-+ videoWidth = 1280
-+ videoHeight = 800
-+ videoFramerate = 24
-+ videoEncoder = hevc
+01. recordSeconds = 60
+02. videoInput = hwaccel
+03. videoWidth = 1280
+04. videoHeight = 800
+05. videoFramerate = 24
+06. videoEncoder = hevc
 
-## CloudFlare Warp
-> .
+## Cloudflare Warp
+> [Warp](https://1.1.1.1/) is a command-line connection management tool. It provides access to restricted websites though the use of a VPN, eliminating the need to use proxies, while offering one of the fastest DNS servers on the planet.
 
-| Command                                      | Information |
-|:--------------------------------------------:|:-----------:|
-| sudo yay -S cloudflare-warp-bin              | |
-| sudo systemctl enable --now warp-svc.service | |
-| warp-cli register                            | |
-| warp-cli connect                             | |
-| warp-cli disconnect                          | |
-| warp-cli set-mode warp                       | |
-| warp-cli set mode warp+doh                   | |
+| No | Command                                      | Information                                     |
+|:--:|:--------------------------------------------:|:-----------------------------------------------:|
+| 01 | yay -S cloudflare-warp-bin                   | A TUI tool that acts as a DNS+VPN server        |
+| 02 | sudo systemctl enable --now warp-svc.service | Enable the background service through systemd   |
+| 03 | warp-cli register                            | Register the instance                           |
+| 04 | warp-cli set-mode warp                       | Set the type of connection to just DNS **SEE.** |
+| 05 | warp-cli connect                             | Connect to the Cloudflare server **SEE.**       |
+
+**SEE.**
+01. *(optional)* Set the type of connection to DNS+VPN: **warp-cli set mode warp+doh**
+02. Disconnect from the Cloudflare server: **warp-cli disconnect**
 
 ## Neofetch
-> .
+> [Neofetch](https://github.com/dylanaraps/neofetch) is a command-line system information tool written in [Bash](https://www.gnu.org/software/bash/).
 
-| Command            | Information   |
-|:------------------:|:-------------:|
-| pacman -S neofetch | |
-| nano ~/.bashrc     | ADD: neofetch |
-| source ~/.bashrc   | |
+| No | Command                 | Information   |
+|:--:|:-----------------------:|:-------------:|
+| 01 | sudo pacman -S neofetch | A TUI tool to display system information |
+| 02 | nano ~/.bashrc          | **SEE.** |
+| 03 | source ~/.bashrc        | Refresh the bash unix shell values |
+
+**SEE.**
+00. Add **neofetch** to the last line of the document
 
 ## Non-Steam Games
-> .
+> The following steps and commands will enable the installation of games from third party store / launchers ([Epic Games](https://store.epicgames.com/en-US/) & [GOG](https://www.gog.com/)), either to the internal SSD or the microSD card.
 
-| Command                        | Information   |
-|:------------------------------:|:-------------:|
-| sudo yay -S steamtinkerlaunch  | |
+01. **Return to Gaming Mode**
+02. STEAM > Settings > System: **Format SD Card**
+03. STEAM > Power > **Return to Desktop**
+04. Super > **Konsole**
 
-+ **DSCVR**: ProtonUp (ProtonGE for Steam, WineGE for Lutrix, and Luxtropedia for GOG)
-+ **DSCVR**: Lutris
-+ **DSCVR**: HeroicGamesLauncher
+| No | Command                                                                       | Information                                                                     |
+|:--:|:-----------------------------------------------------------------------------:|:-------------------------------------------------------------------------------:|
+| 01 | flatpak install flathub net.davidotek.pupgui2                                 | A GUI tool to magage community maintained versions of proton by GloriousEggroll |
+| 03 | flatpak --user override --filesystem=/run/udev:ro net.davidotek.pupgui2       | Access the device events management subsystem                                   |
+| 03 | flatpak install flathub com.heroicgameslauncher.hgl                           | A GUI tool to connect to the **Epic Games** and **GOG** launchers on GNU/Linux  |
+| 04 | flatpak --user override --filesystem=/run/udev:ro com.heroicgameslauncher.hgl | Access the device events management subsystem                                   |
+| 05 | sudo chown deck:deck -R /run/media/mmcblk0p1/                                 | Change ownership of the microSD card to the default deck user                   |
+| 06 | flatpak install flathub io.github.philipk.boilr                               | A GUI tool to import non-steam games to the Steam library                       |
+| 07 | flatpak --user override --filesystem=/run/udev:ro io.github.philipk.boilr     | Access the device events management subsystem                                   |
 
-> STEAM_COMPAT_MOUNTS=/run/media/mmcblk0p1 %command%
+01. Super > HeroicGamesLauncher (Right Click) > **Add to Steam**
+02. Super > Steam > Edge (Right Click) > Properties > Launch Options > **STEAM_COMPAT_MOUNTS=/run/media/mmcblk0p1 %command%**
 
 ## Emulated Games
-> .
+> 
 
-+ Steam (Button) > Settings > System: Format SD Card
 + [EMUDECK](https://www.emudeck.com/EmuDeck.desktop)
 + [Steam ROM Manager](https://github.com/SteamGridDB/steam-rom-manager/releases/tag/v2.3.40)
-+ [BoilR](https://github.com/PhilipK/BoilR)
-+ [GameHub](https://github.com/tkashkin/GameHub)
 
 ## Kodi
 > .
@@ -341,7 +345,19 @@ YOGURT: Yet AnOther User Repository Tool
 |:-------------------:|:-------------:|
 | sudo pacman -S kodi | |
 
-## Windows 11
+## Color Calibration
+> .
+
+| No | Command                   | Information                                       |
+|:--:|:-------------------------:|:-------------------------------------------------:|
+| 01 | sudo pacman -S displaycal | A GUI tool used for color calibration             |
+| 02 | sudo pacman -S argyllcms  | A TUI tool containing drivers for colormeteres    |
+| 03 | yay -S steamtinkerlaunch  | A GUI tool used to configure Linux & Proton games |
+
+01. [ArgyllCMS Binaries](https://www.argyllcms.com/downloadlinux.html)
+02. Super > **DisplayCal**
+
+## Microsoft Windows
 > .
 
 + https://github.com/media-a-server/Steam-Deck-Driver-Guide
