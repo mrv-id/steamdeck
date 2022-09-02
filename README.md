@@ -256,7 +256,7 @@ YOGURT: Yet AnOther User Repository Tool
 
 | No | Command                                                                                            | Information                  |
 |:--:|:--------------------------------------------------------------------------------------------------:|:----------------------------:|
-| 00 | curl -L https://github.com/SteamDeckHomebrew/decky-loader/raw/main/dist/install_prerelease.sh | sh | A GUI tool to manage plagins |
+| 00 | curl -L https://github.com/SteamDeckHomebrew/decky-loader/raw/main/dist/install_prerelease.sh \| sh | A GUI tool to manage plagins |
 
 01. **Return to Gaming Mode**
 02. . . . > Plugins > **Plugins Store**
