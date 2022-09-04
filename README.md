@@ -183,9 +183,13 @@ YOGURT: Yet AnOther User Repository Tool
 |:--:|:---------------------------------:|:----------------------------------------------------------------:|
 | 01 | sudo pacman -S bash-completion    | A TUI tool to autocomplete commands by pressing the "TAB" keycap |
 | 02 | sudo pacman -S bpytop             | A TUI tool to monitor system performance                         |
+| 03 | sudo pacman -S gparted            | A GUI tool to format filesystems **SEE.**                        |         
 | 03 | sudo pacman -S qbittorrent        | A GUI app to download / upload torrent files                     |
 | 04 | sudo pacman -S papirus-icon-theme | A GUI theme for the system icons                                 |
 | 05 | sudo pacman -Rsc firefox          | Remove Firefox w/ dependencies & clear pacman cache              |
+
+**SEE.**
+00. sudo pacman -S exfatprogs
 
 ### Yay
 | No | Command             | Information                                                        |
