@@ -274,8 +274,7 @@ YOGURT: Yet AnOther User Repository Tool
 
 | No | Command                   | Information                                       |
 |:--:|:-------------------------:|:-------------------------------------------------:|
-| 01 | sudo pacman -S displaycal | A GUI tool used for color calibration             |
-| 02 | sudo pacman -S argyllcms  | A TUI tool containing drivers for colormeteres    |
+| 00 | sudo pacman -S displaycal | A GUI tool used for color calibration             |
 
 01. [ArgyllCMS Binaries](https://www.argyllcms.com/downloadlinux.html)
 02. Super > **DisplayCal**
