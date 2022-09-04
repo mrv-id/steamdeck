@@ -233,10 +233,25 @@ YOGURT: Yet AnOther User Repository Tool
 05. Super > Steam > Chrome (Right Click) > Properties > **YouTube**
 06. ... > Launch Options > --window-size=1024,640 --force-device-scale-factor=1.25 --device-scale-factor=1.25 --kiosk "https://www.youtube.com"
 
+### Twitch
+01. Super > Chrome (Right Click) > **Add to Steam**
+05. Super > Steam > Chrome (Right Click) > Properties > **YouTube**
+06. ... > Launch Options > --window-size=1024,640 --force-device-scale-factor=1.25 --device-scale-factor=1.25 --kiosk "https://www.twitch.tv/"
+
 ### MapGenie
 01. Super > Chrome (Right Click) > **Add to Steam**
 05. Super > Steam > Chrome (Right Click) > Properties > **MapGenie**
 06. ... > Launch Options > --window-size=1024,640 --force-device-scale-factor=1.25 --device-scale-factor=1.25 --kiosk "https://mapgenie.io/"
+
+### Twitter
+01. Super > Chrome (Right Click) > **Add to Steam**
+05. Super > Steam > Chrome (Right Click) > Properties > **Twitter**
+06. ... > Launch Options > --window-size=1024,640 --force-device-scale-factor=1.25 --device-scale-factor=1.25 --kiosk "https://twitter.com/home"
+
+### Reddit
+01. Super > Chrome (Right Click) > **Add to Steam**
+05. Super > Steam > Chrome (Right Click) > Properties > **Reddit**
+06. ... > Launch Options > --window-size=1024,640 --force-device-scale-factor=1.25 --device-scale-factor=1.25 --kiosk "https://www.reddit.com/"
 
 <!---
 ### xCloud
