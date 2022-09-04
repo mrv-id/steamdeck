@@ -148,15 +148,15 @@ Date: August 31, 2022
 ## Arch User Repository
 > There is also a user-maintained repository, containing packaging instructions for every piece of software that has not yet made it into the official repo. To install applications from the [AUR](https://aur.archlinux.org/) users must build them from scratch -- a time consuming process. Thus, the use of a special package manager is mandatory, enter [yay](https://github.com/Jguer/yay).
 
-| No | Command                                          | Information                                                                |
-|:--:|:------------------------------------------------:|:--------------------------------------------------------------------------:|
-| 01 | sudo pacman -Syu                                 | Synchronize (/compare) local software to remote repositories & update them |
-| 02 | sudo pacman -S git                               | Install the git management tool                                            |
-| 03 | sudo pacman -S base-devel                        | Install tools needed for source compiling software                         |
-| 04 | sudo git clone https://aur.archlinux.org/yay.git | Clone (/download) the YAY repository to a local directory                  |
-| 05 | cd yay                                           | Change directory to the "Yet Another Yogurt" folder                        |
-| 06 | sudo makepkg -si                                 | Make (/build) the YAY package                                              |
-| 07 | sudo yay                                         | (01) + yay -Syu                                                            |
+| No | Command                                     | Information                                                                |
+|:--:|:-------------------------------------------:|:--------------------------------------------------------------------------:|
+| 01 | sudo pacman -Syu                            | Synchronize (/compare) local software to remote repositories & update them |
+| 02 | sudo pacman -S git                          | Install the git management tool                                            |
+| 03 | sudo pacman -S base-devel                   | Install tools needed for source compiling software                         |
+| 04 | git clone https://aur.archlinux.org/yay.git | Clone (/download) the YAY repository to a local directory                  |
+| 05 | cd yay                                      | Change directory to the "Yet Another Yogurt" folder                        |
+| 06 | makepkg -si                                 | Make (/build) the YAY package                                              |
+| 07 | sudo yay                                    | (01) + yay -Syu                                                            |
 
 <!---
 YOGURT: Yet AnOther User Repository Tool
