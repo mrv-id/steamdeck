@@ -122,6 +122,12 @@ Date: August 31, 2022
 | 10 | sudo chmod +x file.sh | Change mode (/permissions) of a script                       |
 | 11 | sudo ./file.sh        | Execute script                                               |
 
+<!---
+sudo pacman -S packagekit-qt5
+sudo pacman -S flatpak
+sudo pacman -S steam
+--->
+
 ## Root User Password
 > Any command that alters the system -- even in the merest way -- needs root access. The [sudo](https://man7.org/linux/man-pages/man8/sudo.8.html) prefix allows a permitted user to execute a command as the super-user. For the **Super User DO** command to work though one needs for the administrator to set a password first.
 
