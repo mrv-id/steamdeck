@@ -182,24 +182,23 @@ YOGURT: Yet AnOther User Repository Tool
 | No | Command                           | Information                                                      |
 |:--:|:---------------------------------:|:----------------------------------------------------------------:|
 | 01 | sudo pacman -S bash-completion    | A TUI tool to autocomplete commands by pressing the "TAB" keycap |
-| 02 | sudo pacman -S bpytop             | A TUI tool to monitor system performance                         |
-| 03 | sudo pacman -S gparted            | A GUI tool to format filesystems **SEE.**                        |         
-| 03 | sudo pacman -S qbittorrent        | A GUI app to download / upload torrent files                     |
-| 04 | sudo pacman -S papirus-icon-theme | A GUI theme for the system icons                                 |
-| 05 | sudo pacman -Rsc firefox          | Remove Firefox w/ dependencies & clear pacman cache              |
-
-**SEE.**
-00. sudo pacman -S exfatprogs
+| 02 | sudo pacman -S notepadqq          | A GUI app to open text documents                                 |
+| 03 | sudo pacman -S bpytop             | A TUI tool to monitor system performance                         |
+| 04 | sudo pacman -S gparted            | A GUI app to format filesystems                                  |
+| 05 | sudo pacman -S exfatprogs         | A TUI tool to enable exfat options on GParted                    |
+| 06 | sudo pacman -S qbittorrent        | A GUI app to download / upload torrent files                     |
+| 07 | sudo pacman -S papirus-icon-theme | A system-wide icons theme                                        |
+| 08 | sudo pacman -Rsc firefox          | Remove Firefox w/ dependencies & clear pacman cache              |
 
 ### Yay
 | No | Command             | Information                                                        |
 |:--:|:-------------------:|:------------------------------------------------------------------:|
 | 01 | yay -S bitwarden    | A GUI app to manage login credentials                              |
 | 02 | yay -S megasync-bin | A GUI app to synchronize a MEGA cloud drive with a local directory |
-| 03 | yay -S annotator    | A GUI app to anotate images                                        |
-| 04 | yay -S discord      | A GUI app to join & chat with communities                          |
-| 05 | yay -S spotify      | A GUI app to listen to music                                       |
-| 06 | yay -S chiaki       | A GUI app to remote connect to a PS4 / PS5 console                 |
+| 03 | yay -S discord      | A GUI app to join & chat with communities                          |
+| 04 | yay -S spotify      | A GUI app to listen to music                                       |
+| 05 | yay -S chiaki       | A GUI app to remote connect to a PS4 / PS5 console                 |
+| 06 | yay -S typora       | A GUI app to open markdown documents                               |
 
 ### Flatpak
 | No | Command                                                              | Information                                   |
@@ -304,25 +303,7 @@ YOGURT: Yet AnOther User Repository Tool
 09. Output encoding > **Full range RGB 0-255**
 10. 3D LUT resolution > **64x64x64**
 11. **Create 3D LUT...**
-12. **SteamDeck.cube**
-
-<!---
-/home/$USER/Donwloads/Argyll_V2.3.0/ref/Rec709.icm
---->
-
-*(optional)* For Kodi:
-01. Super > **Create 3D LUT**
-02. Source profile > **Rec709 ITU-R BT.709**
-03. Tone curve > **Rec. 1886** / Gamma: **2.4** / **Absolute** / Black output offset: **0%**
-04. Destination profile > **AVX7530 U...** / **Apply calibration (vcgt)** (Checkbox)
-05. Gamut mapping mode > **Inverse device-to-PCS**
-06. Rendering intent > **Absolut colorimetric with white point scaling**
-07. 3D LUT file format > **madVR (.3dlut)**
-08. Input encoding > **TV RGB 16-235**
-09. Output encoding > ***TV RGB 16-235**
-10. 3D LUT resolution > **64x64x64**
-11. **Create 3D LUT...**
-12. **SteamDeck.3dlut**
+12. **SteamDeck.cube** | **SteamDeck.icc** | **SteamDeck.3dlut** | **SteamDeck.png**
 
 ## Decky Loader
 > [Decky Loader](https://deckbrew.xyz/) is a plugin manager for Steam Deck. Those mods offer means to overclock, control the build-in fun, change CSS themes, and more. Users can install plugins by either downloading (and extracting) them to "/home/homebrew/plugins" of though the [Plugins Store](https://beta.deckbrew.xyz/).
@@ -334,17 +315,17 @@ YOGURT: Yet AnOther User Repository Tool
 05. *(optional)* Super > Chrome > [Plugins Store](https://plugins.deckbrew.xyz/)(OLD)
 06. Super > **Konsole**:
 
-| No | Command                                                                                            | Information                  |
-|:--:|:--------------------------------------------------------------------------------------------------:|:----------------------------:|
+| No | Command                                                                                             | Information                  |
+|:--:|:---------------------------------------------------------------------------------------------------:|:----------------------------:|
 | 00 | curl -L https://github.com/SteamDeckHomebrew/decky-loader/raw/main/dist/install_prerelease.sh \| sh | A GUI tool to manage plagins |
 
 01. **Return to Gaming Mode**
 02. . . . > Plugins > **Plugins Store**
 03. PowerTools
-04. *(optional)* Fantastic
-05. *(optional)* MangoHUD
-06. *(optional)* [CSSLoader](https://github.com/EMERALD0874/Steam-Deck-Themes)
-07. *(optional)* AutoNightMode
+04. Fantastic
+05. *(optional)* [CSSLoader](https://github.com/EMERALD0874/Steam-Deck-Themes)
+06. *(optional)* AutoNightMode
+07. *(optional)* vibrantDeck
 
 ## Replay Sorcery
 > [Replay Sorcery](https://github.com/matanui159/ReplaySorcery) is a command-line screen capture utility that by default saves the last thirty seconds of gameplay. Users can invoke it by pressing **Ctrl+Super+R**.
@@ -363,21 +344,6 @@ YOGURT: Yet AnOther User Repository Tool
 04. videoHeight = 800
 05. videoFramerate = 24
 06. videoEncoder = hevc
-
-## Cloudflare Warp
-> [Warp](https://1.1.1.1/) is a command-line connection management tool. It provides access to restricted websites though the use of a VPN, eliminating the need to use proxies, while offering one of the fastest DNS servers on the planet.
-
-| No | Command                                      | Information                                     |
-|:--:|:--------------------------------------------:|:-----------------------------------------------:|
-| 01 | yay -S cloudflare-warp-bin                   | A TUI tool that acts as a DNS+VPN server        |
-| 02 | sudo systemctl enable --now warp-svc.service | Enable the background service through systemd   |
-| 03 | warp-cli register                            | Register the instance                           |
-| 04 | warp-cli set-mode warp                       | Set the type of connection to just DNS **SEE.** |
-| 05 | warp-cli connect                             | Connect to the Cloudflare server **SEE.**       |
-
-**SEE.**
-01. *(optional)* Set the type of connection to DNS+VPN: **warp-cli set mode warp+doh**
-02. Disconnect from the Cloudflare server: **warp-cli disconnect**
 
 ## Neofetch
 > [Neofetch](https://github.com/dylanaraps/neofetch) is a command-line system information tool written in [Bash](https://www.gnu.org/software/bash/).
@@ -399,22 +365,26 @@ YOGURT: Yet AnOther User Repository Tool
 03. STEAM > Power > **Return to Desktop**
 04. Super > **Konsole**
 
-| No | Command                                                                       | Information                                                                     |
-|:--:|:-----------------------------------------------------------------------------:|:-------------------------------------------------------------------------------:|
-| 01 | flatpak install flathub net.davidotek.pupgui2                                 | A GUI tool to magage community maintained versions of proton by GloriousEggroll |
-| 03 | flatpak --user override --filesystem=/run/udev:ro net.davidotek.pupgui2       | Access the device events management subsystem                                   |
-| 03 | flatpak install flathub com.heroicgameslauncher.hgl                           | A GUI tool to connect to the **Epic Games** and **GOG** launchers on GNU/Linux  |
-| 04 | flatpak --user override --filesystem=/run/udev:ro com.heroicgameslauncher.hgl | Access the device events management subsystem                                   |
-| 05 | sudo chown deck:deck -R /run/media/mmcblk0p1/                                 | Change ownership of the microSD card to the default deck user                   |
-| 06 | flatpak install flathub io.github.philipk.boilr                               | A GUI tool to import non-steam games to the Steam library                       |
-| 07 | flatpak --user override --filesystem=/run/udev:ro io.github.philipk.boilr     | Access the device events management subsystem                                   |
-| 08 | yay -S steamtinkerlaunch                                                      | A GUI tool used to configure native Linux & Proton games                        |
+| No | Command                                                                                             | Information                                                                     |
+|:--:|:---------------------------------------------------------------------------------------------------:|:-------------------------------------------------------------------------------:|
+| 01 | flatpak install flathub net.davidotek.pupgui2                                                       | A GUI app to magage community maintained versions of proton by GloriousEggroll  |
+| 03 | flatpak --user override --filesystem=/run/udev:ro net.davidotek.pupgui2                             | Access the device events management subsystem                                   |
+| 03 | flatpak install flathub com.heroicgameslauncher.hgl                                                 | A GUI app to connect to the **Epic Games** and **GOG** launchers on GNU/Linux   |
+| 04 | flatpak --user override --filesystem=/run/udev:ro com.heroicgameslauncher.hgl                       | Access the device events management subsystem                                   |
+| 05 | sudo chown deck:deck -R /run/media/mmcblk0p1/                                                       | Change ownership of the microSD card to the default deck user                   |
+| 06 | flatpak install flathub io.github.philipk.boilr                                                     | A GUI app to import non-steam games to the Steam library                        |
+| 07 | flatpak --user override --filesystem=/run/udev:ro io.github.philipk.boilr                           | Access the device events management subsystem                                   |
+| 08 | flatpak install com.valvesoftware.Steam.Utility.steamtinkerlaunch                                   | A GUI app used to configure Proton games                                        |
+| 09 | flatpak --user override --filesystem=/run/udev:ro com.valvesoftware.Steam.Utility.steamtinkerlaunch | Access the device events management subsystem                                   |
+| 10 | yay -S vkbasalt                                                                                     | A TUI tool used as ReShade for native linux apps running on VULKAN              |
+| 11 | yay -S goverlay-bin                                                                                 | A GUI app to run vkbasalt, configure replaysorcery and MangoHud                 |
 
 01. Super > HeroicGamesLauncher (Right Click) > **Add to Steam**
 02. Super > Steam > HeroicGamesLauncher (Right Click) > Properties > Launch Options > **STEAM_COMPAT_MOUNTS=/run/media/mmcblk0p1 %command%** (ADD)
 03. Super > Steam > nativeTitle (Right Lick) > Properties > Launch Options > **steamtinkerlaunch %command%** (ADD)
 04. Super > Steam > protonTitle (Right Lick) > Properties > **Force the use of a specific Steam Play compatibility too** (Checkbox)
 05. ... > **steamtinkerlaunch**
+06. Super > Steam > nativeTitle (Right Click) > Properites > Launch Options > **ENABLE_VKBASALT=1 %command%** (ADD)
 
 ## Emulated Games
 > [EMUDECK](https://www.emudeck.com/) is an automated installtion script that sets up every available emulator for the Steam Deck. It integrades to the Steam Library, it respects the 16:10 aspect ratio and makes use of Steam Input per game.
@@ -427,6 +397,21 @@ YOGURT: Yet AnOther User Repository Tool
 06. Preview > Generate App list > **Save App list**
 07. **Return to Gaming Mode**
 
+## Cloudflare Warp
+> [Warp](https://1.1.1.1/) is a command-line connection management tool. It provides access to restricted websites though the use of a VPN, eliminating the need to use proxies, while offering one of the fastest DNS servers on the planet.
+
+| No | Command                                      | Information                                     |
+|:--:|:--------------------------------------------:|:-----------------------------------------------:|
+| 01 | yay -S cloudflare-warp-bin                   | A TUI tool that acts as a DNS+VPN server        |
+| 02 | sudo systemctl enable --now warp-svc.service | Enable the background service through systemd   |
+| 03 | warp-cli register                            | Register the instance                           |
+| 04 | warp-cli set-mode warp                       | Set the type of connection to just DNS **SEE.** |
+| 05 | warp-cli connect                             | Connect to the Cloudflare server **SEE.**       |
+
+**SEE.**
+01. *(optional)* Set the type of connection to DNS+VPN: **warp-cli set mode warp+doh**
+02. Disconnect from the Cloudflare server: **warp-cli disconnect**
+
 ## Kodi
 > [Kodi](https://kodi.tv/), ex. XBMC (abbr. XBox Media Center) is the ultimate media player.
 
@@ -436,8 +421,8 @@ YOGURT: Yet AnOther User Repository Tool
 
 01. Super > Kodi (Right Click) > **Add to Steam**
 02. Super > **Kodi**
-03. Settings > Display > Colour management mode > **3DLUT**
-04. ... > 3DLUT file > /home/deck/Documents/.calibration/SteamDeck.3dlut
+03. Settings > Display > Colour management mode > **ICC Profile**
+04. ... > ICC Profile file > /home/deck/Documents/.calibration/SteamDeck.icc
 05. Settings > System > Add-ons > **Unknown Sources** (Toggle)
 
 ### [Arctic Horizon 2](https://forum.kodi.tv/showthread.php?tid=367352)
