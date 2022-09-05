@@ -1,14 +1,9 @@
 <!---
-Author: Argi Pent
-Date: August 31, 2022
---->
-
 # Hitchhiker's Guide to the Steam Deck
-> [Steam Deck](https://www.steamdeck.com/en/) (released on February 25, 2022) is a handheld gaming computer developed by [Valve](https://www.valvesoftware.com/el/). It is powerd by an **x86-64 APU**, running [SteamOS](https://store.steampowered.com/steamos/download/?ver=steamdeck&snr=) — a [GNU/Linux Arch](https://archlinux.org/) based distribution on a [KDE Plasma](https://kde.org/plasma-desktop/) environment. It is designed to play both native and Windows OS emulated titles via the [Proton](https://github.com/ValveSoftware/Proton) compatibility layer.
+> [Steam Deck](https://www.steamdeck.com/en/) (released on February 25, 2022) is a handheld gaming computer developed by [Valve](https://www.valvesoftware.com/el/). It is powerd by an **x86-64 APU**, running [SteamOS](https://store.steampowered.com/steamos/download/?ver=steamdeck&snr=) -- a [GNU/Linux Arch](https://archlinux.org/) based distribution on a [KDE Plasma](https://kde.org/plasma-desktop/) environment. It is designed to play both native and Windows OS emulated titles via the [Proton](https://github.com/ValveSoftware/Proton) compatibility layer.
 
 ## Table of Contents
 
-<!---
 ## Technical Specifications
 
 | Compute | Information                             |
@@ -76,7 +71,6 @@ Date: August 31, 2022
 | Left & Right Lower Buttons   | L5, R5                    |
 | Haptics                      | Yes                       |
 | Gyro                         | 6-Axix (IMU)              |
---->
 
 ![tech specs 1](https://github.com/mrv-id/steamdeck/blob/main/tech-specs-1.png)
 ![tech specs 2](https://github.com/mrv-id/steamdeck/blob/main/tech-specs-2.png)
@@ -101,6 +95,8 @@ Date: August 31, 2022
 | 12 | STEAM + D-Pad Right          | Enter key                    |
 | 13 | STEAM + D-Pad Down           | Tab key                      |
 | 14 | STEAM + D-Pad Left           | Escape key                   |
+
+--->
 
 ## Terminal CheatSheet
 > The unofficial **GNU/Linux Arch-based distribution** terminal cheatsheet.
