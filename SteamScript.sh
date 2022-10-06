@@ -69,6 +69,11 @@ flatpak install flathub org.x.Warpinator
 flatpak --user override --filesystem=/run/udev:ro org.x.Warpinator
 flatpak install flathub org.qbittorrent.qBittorrent
 flatpak --user override --filesystem=/run/udev:ro org.qbittorrent.qBittorrent
+echo "REPO (SKIN): https://jurialmunkey.github.io/repository.jurialmunkey/"
+echo "REPO (REAL): https://tikipeter.github.io/"
+echo "REPO (SUBS): https://a4k-openproject.github.io/a4kSubtitles/packages/"
+flatpak install flathub tv.kodi.Kodi
+flatpak --user override --filesystem=/run/udev:ro tv.kodi.Kodi
 flatpak install flathub com.bitwarden.desktop
 flatpak --user override --filesystem=/run/udev:ro flathub com.bitwarden.desktop
 flatpak install flathub com.discordapp.Discord
